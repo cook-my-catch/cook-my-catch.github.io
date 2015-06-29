@@ -58,4 +58,7 @@ color:#ffffff;
     border-color: #E1E1E1;
     font-size: 14px;
 }
- 
+.footer_color, .footer_color .site-background, .footer_color .first-quote, .footer_color .related_image_wrap, .footer_color .gravatar img .footer_color .hr_content, .footer_color .news-thumb, .footer_color .post-format-icon, .footer_color .ajax_controlls a, .footer_color .tweet-text.avatar_no, .footer_color .toggler, .footer_color .toggler.activeTitle:hover, .footer_color #js_sort_items, .footer_color.inner-entry, .footer_color .grid-entry-title, .footer_color .related-format-icon, .grid-entry .footer_color .avia-arrow, .footer_color .avia-gallery-big, .footer_color .avia-gallery-big, .footer_color .avia-gallery img, .footer_color .grid-content, .footer_color .av-share-box ul, #top .footer_color .av-related-style-full .related-format-icon, .footer_color .related_posts.av-related-style-full a:hover, .footer_color.avia-fullwidth-portfolio .pagination .current, .footer_color.avia-fullwidth-portfolio .pagination a, .footer_color .av-hotspot-fallback-tooltip-inner, .footer_color .av-hotspot-fallback-tooltip-count {
+    background-color: #137255;
+    color: #ffffff;
+} 
