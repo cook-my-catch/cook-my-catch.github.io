@@ -71,42 +71,89 @@
   </div><!-- closes container fluid -->
   <main>
     <!-- Note The main element is useful for accessibility, as a screen reader reading the main part of the document, will say: "entering the main section..."-->
-  <div class="container-fluid main_color">
+  <div class="container-fluid main_color" style="background:#e3e7ea">
     <article>
     <div class="col-md-12">
       <header>
-        <h2>Source Documents</h2>
+        <h2>Conformance, Validation, and...</h2>
+      </header>
+      </div><!-- closes md12 for header -->
+      <div class="col-md-4">
+      <section>
+        <h2>Outlines</h2>
+        <h3>4.3.10.1 Creating an outline</h3>
+        <h4>There are currently no known implementations of the outline algorithm in graphical browsers or assistive technology user agents, although the algorithm is implemented in other software such as conformance checkers. Therefore the outline algorithm cannot be relied upon to convey document structure to users. Authors are advised to use heading rank (h1-h6) to convey document structure.</h4>
+        <h4>Source: <a href="http://www.w3.org/TR/html5/sections.html#outlines">4.3. HTML5 Outlines</a></h4>
+        <h3>Important to note: The HTML5 header element does not take part in the outline algorithm.</h3>
+        <h4>Source: <a href="http://www.w3.org/TR/2014/CR-html5-20140731/sections.html#the-header-element">W3C section on header element</a></h4>
+      </section>
+      </div><!-- closes colmd4 -->
+      <div class="col-md-4">
+      <section>
+          <h2>Conformance:</h2>
+          
+          <ul>
+            <li>Conformance and Validation are not the same thing.</li>
+            <li>There are differences between the w3c validator and the nu markup checker.</li>
+            <li>There are differences between W3C HTML and WHATWG HTML conformance.</li>
+            <li>DTD and Schema are not equivalent.</li>
+          </ul>
+          <h4>Source: <a href="http://html5doctor.com/html5-check-it-before-you-wreck-it-with-miketm-smith/">Check It Before You Wreck It</a></h4>
+      </section>
+      </div><!-- closes md4 -->
+      <div class="col-md-4">
+        <aside>
+          <h2>Aside</h2>
+          <h3>Why we care about outlines</h3>
+          <p>Document outlines rely on heading structure, and this was and is used to generate outlines for assitive technology.  <a href="http://webaim.org/projects/screenreadersurvey/#headings">See the results of webaim survey here.</a><p>
+          <h4>Does the HTML5 header element help?</h4>
+          <h4>The header element is not sectioning content; it doesn't introduce a new section.</h4>
+          <a href="http://www.w3.org/TR/2014/CR-html5-20140731/sections.html#the-header-element">Link to the W3C reference</a>
+          
+        </aside>
+      </div><!-- closes md4 -->
+    </article>
+    </div><!-- closes container fluid -->
+    <!-- start of second group -->
+<div class="container-fluid main_color" style="background:#ff0000">
+    <article>
+    <div class="col-md-12">
+      <header>
+        <h2>Browser Tools</h2>
       </header>
       </div><!-- closes md12 for header -->
       <div class="col-md-4">
       <section>
         <h2>Image One</h2>
+        <img src="http://cook-my-catch.com/T3special/BrowserToolStyle.jpg" class="img-responsive" alt="Screenshot showing default interface.">
         <h4>content</h4>
         
       </section>
       </div><!-- closes colmd4 -->
       <div class="col-md-4">
       <section>
-      <header>
-          <h2>Validation References</h2>
-      </header>
-          <h3>Image Two</h3>
+          <h2>Image Two</h2>
+        <img src="http://cook-my-catch.com/T3special/Styles-1.jpg" class="img-responsive" alt="Screenshot showing default interface.">
+        <h4>content</h4>
       </section>
       </div><!-- closes md4 -->
       <div class="col-md-4">
-        <aside>
-          Aside with Calendar
-        </aside>
+        <section>
+          <h2>Image Three</h2>
+        <img src="http://cook-my-catch.com/T3special/Styles-2.jpg" class="img-responsive" alt="Screenshot showing default interface.">
+        <h4>content</h4>
+      </section>
       </div><!-- closes md4 -->
     </article>
-    </div><!-- closes container fluid -->
+    </div><!-- closes container fluid -->    
+    
+    
+    
+    <!-- end of second group -->
     </main><!-- all else are references -->
     <div class="container-fluid footer_color">
     <footer><!-- USFSP footer color -->
       <div class="col-md-4">
-        <header>
-      <h4>References</h4>
-        </header>
       <ul>
         <li><a href="http://gsnedders.html5.org/outliner/">HTML5 Outliner Tool</a></li>
         <li><a href="https://validator.w3.org/">Nu Validator</a></li>
@@ -115,9 +162,6 @@
       </ul>  
       </div>
       <div class="col-md-4">
-          <header>
-            <h4>Bootstrap</h4>
-          </header>
           <ul>
             <li><a href="http://getbootstrap.com/">Bootstrap Home Page</a></li>
             <li><a href="https://github.com/twbs/bootstrap">Bootstrap on Github</a></li>
@@ -125,7 +169,6 @@
           </ul>
       </div>
       <div class="col-md-4">
-          <header><h4>Third Column</h4></header>
       </div><!-- closes colmd4 -->
       </footer>
     </div><!-- closes container fluid for first clean white footer -->
@@ -141,5 +184,5 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-       
-  
+         
+     
