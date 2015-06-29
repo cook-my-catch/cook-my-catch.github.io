@@ -37,6 +37,17 @@ color:#ffffff;
 element {
     font-size: 14px;
 }
+
+#top #wrap_all .header_color h2, #top #wrap_all .main_color h2, #top #wrap_all .alternate_color h2, #top #wrap_all .footer_color h2, #top #wrap_all .socket_color h2 {
+    color: #000;
+    font-size: 20px;
+    line-height: 1.2em;
+    font-family: "EB Garamond","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.template-page .entry-content-wrapper h1, .template-page .entry-content-wrapper h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 .main_color li a {
     color: #678723;
 }
