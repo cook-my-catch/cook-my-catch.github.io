@@ -24,14 +24,14 @@
     <![endif]-->
     <!-- USFSP -->
     <!-- <link rel='stylesheet' id='avia-google-webfont' href='//fonts.googleapis.com/css?family=PT+Sans%7COpen+Sans:400,600%7CEB+Garamond' type='text/css' media='all'/> -->
-    <link href="http://cook-my-catch.github.io/usfsp.css" rel="stylesheet">
+    <link href="usfsp.css" rel="stylesheet">
     <!-- end USFSP -->
   </head>
-  <body>
-    <div class="container-fluid header">
+  <body class="wrap_all">
+    <div class="container-fluid header hfgreen">
       <div class="col-md-12">
     <header>
-      <h1 style="color:#ffffff;">Coding Exercise</h1>
+      <h1>Coding Exercise</h1>
       </header>
       <nav>
         <header><h3>Nav Menu</h3></header>
@@ -69,7 +69,7 @@
       <!-- stop here for Bootstrap nav class -->
       </div><!-- closes md12 -->
   </div><!-- closes container fluid -->
-  <div class="container-fluid">
+  <div class="container-fluid main_color">
     <article>
     <div class="col-md-12">
       <header>
@@ -84,7 +84,7 @@
         <h4><a href="http://getbootstrap.com/getting-started/">Basic Bootstrap Template</a></h4>
       </section>
       </div><!-- closes colmd4 -->
-      <div class="col-xs-6 col-md-4">
+      <div class="col-md-4">
       <section>
       <header>
           <h2>Validation References</h2>
@@ -92,24 +92,16 @@
           <h3><a href="https://validator.w3.org/">W3C Validator</a></h3>
       </section>
       </div><!-- closes md4 -->
-      <div class="col-xs-6 col-md-4">Facebook here</div>
+      <div class="col-md-4">
+        <aside>
+          Aside with Calendar
+        </aside>
+      </div><!-- closes md4 -->
     </article>
     </div><!-- closes container fluid -->
-    <article>
-      <header>
-        <h2>Illustrations</h2>
-      </header>
-      <section>
-        <figure>
-  <img src="http://www.fredcavazza.net/files/2009/09/html5_structure.png" alt="Example of HTML5 structuring tags" />
-  <figcaption>
-    <h5>Fig. 1 : an example of how new structuring elements could be used. This page put a &lt;nav&gt; on top, and does not have headers and footer for each article, like in this figure, but it could... By the way, this is a &lt;figcaption&gt; inside a &lt;figure&gt; element...</h5>
-  </figcaption>
-</figure>
-      
-      </section>
-        </article>
-    <aside style="width:100%"><!--Temporary override of Bootstrap style for aside-->
+    <div class="container-fluid main_color">
+    <footer>
+    <aside>
       <h4>References</h4>
       <ul>
         <li><a href="https://validator.w3.org/">Nu Validator</a></li>
@@ -117,6 +109,8 @@
         <li><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-article-element">Each article should be identified, typically by including a heading (h1–h6 element) as a child of the article element.</a></li>
       </ul>  
         </aside>
+      </footer>
+      </div><!-- closes container fluid hfgreen for first footer -->
 <footer>&nbsp;</footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -129,4 +123,5 @@
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+     
   
