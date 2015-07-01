@@ -44,4 +44,5 @@ body {
 }
 figcaption {
     font-weight: bold;
+    text-transform: uppercase;
 }
