@@ -93,4 +93,17 @@ figcaption {
     background-color:#000000;
     margin-left:25px;
     padding-bottom:25px;
+    text-align:center;
+}
+
+.bb {
+    border-bottom-style:solid;
+    border-width:3px;
+    border-bottom-color:#000000;
+}
+
+.bw {
+    border-bottom-style:solid;
+    border-width:3px;
+    border-bottom-color:#ffffff;
 }
