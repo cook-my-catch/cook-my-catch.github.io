@@ -29,7 +29,7 @@
   </head>
   <body class="wrap_all">
     <div class="container-fluid header hfgreen">
-      <div class="col-md-12">
+      <div class="row">
     <header>
       <h1>Coding Exercise</h1>
       </header>
@@ -71,7 +71,7 @@
   </div><!-- closes container fluid -->
   <main><!-- used for accessibility, screen readers will announce entering main section-->
     <div class="container-fluid main_color">
-      <div class="col-md-12">
+      <div class="row">
       <header><h2>How I Built This Web Page</h2></header>
       </div><!-- closes colmd12 -->
     </div><!-- closes containerfluid main_color with header How I built the web page-->
@@ -79,10 +79,10 @@
         <div class="col-md-8">
           <section>
           <h2>Introduction</h2>
-          <h3>Many questons arose while creating this page--even the simplest questions, such as what validation really means (it's not the same as conformance), "who" should be the final authority on validation (W3C and WCAG are not in agreement with each other) "how" structure should be evaluated (outlines are still used by assistive technology, but they do not necessarily align with the DOM tree) and "how much" is the accessibility improved with HTML5 features (e.g., are captions read by a screen reader?  It turns out they are not, and therefore alt text is still required).</h3>
+          <h3>Many questons arose while creating this page--even the simplest questions, such as what validation really means (it's not the same as conformance), "who" should be the final authority on validation (W3C and WCAG are not in agreement with each other) "how" structure should be evaluated (outlines are still used by assistive technology, but they do not necessarily align with the DOM tree) and "how much" is the accessibility improved with HTML5 features (e.g., are captions read by a screen reader?  It turns out they are not, and therefore alt text is still required).  There were many checks between HTML5 semantics and Bootstrap.  Take, for example, the autofocus feature in forms; using the autofocus attribute for HTML5 forms will not work in certain features of Bootstrap, such as in modals.  <a href="http://getbootstrap.com/javascript/#modals">See this link for more information.</a></h3>
           </section>
           </div><!-- closes col md4 -->
-      <div class="col-md-4">
+      <div class=" col-xs-6 col-md-4">
         Aside for PHP scraping...or
         <h3>What about HTML5 and the h1 tags?</h3>
         <a href="http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824">Why we are told that using multiple h1 tags is GOOD</a><br />
@@ -91,10 +91,10 @@
      </div><!-- closes container-fluid main_color -->
     <section>
     <div class="container-fluid main_color" style="background:#e3e7ea">
-      <div class="col-md-12" style="border-bottom-style:solid;border-width:3px;border-bottom-color:#000000;">
+      <div class="row" style="border-bottom-style:solid;border-width:3px;border-bottom-color:#000000;">
         <h2>Looking for Problems</h2>
       </div><!-- closes colmd12 -->
-      <div class="col-md-4">
+      <div class="col-xs-6 col-md-4">
         <h3>Image One: Console Tool</h3>
         <figure id="fig1">
         <img id="img1" src="http://cook-my-catch.com/T3special/ConsoleTool-1.gif" class="img-responsive" alt="Screenshot showing use of a browser console tool, in this case showing error messages of failed script delivery.">
@@ -102,7 +102,7 @@
         </figure>
         <h4>Captions are displayed on the web page, but not in outline view.  Alt text is necessary for screen-readers.</h4>
       </div><!-- closes colmd4 -->
-      <div class="col-md-4">
+      <div class="col-xs-6 col-md-4">
           <h3>Image Two: W3C Nu Validator</h3>
           <figure id="fig2">
         <img id="img2" src="http://cook-my-catch.com/T3special/NuChecker-1.gif" class="img-responsive" alt="Screenshot showing the interface for the NuValidator.">
@@ -110,7 +110,7 @@
         </figure>
         <h4>content</h4>
       </div><!-- closes md4 -->
-      <div class="col-md-4">
+      <div class="col-xs-6 col-md-4">
           <h3>Image Three: W3C Validator</h3>
           <figure id="fig3">
         <img id="img3" src="http://cook-my-catch.com/T3special/W3CChecker-1.gif" class="img-responsive" alt="Screenshot showing interface for standard W3C validator.">
@@ -122,13 +122,13 @@
     </section>
     <section>
     <div class="container-fluid main_color">
-      <div class="col-md-4">
+      <div class="col-xs-6 col-md-4">
         <h2>Outlines</h2>
         <h3>4.3.10.1 Creating an outline</h3>
         <h4>There are currently no known implementations of the outline algorithm in graphical browsers or assistive technology user agents, although the algorithm is implemented in other software such as conformance checkers. Therefore the outline algorithm cannot be relied upon to convey document structure to users. Authors are advised to use heading rank (h1-h6) to convey document structure.</h4>
         <h4>Source: <a href="http://www.w3.org/TR/html5/sections.html#outlines">4.3. HTML5 Outlines</a></h4>
       </div><!-- closes colmd4 -->
-      <div class="col-md-4">
+      <div class="col-xs-6 col-md-4">
           <h2>Conformance:</h2>
           <ul>
             <li>Conformance and Validation are not the same thing.</li>
@@ -138,7 +138,7 @@
           </ul>
           <h4>Source: <a href="http://html5doctor.com/html5-check-it-before-you-wreck-it-with-miketm-smith/">Check It Before You Wreck It</a></h4>
       </div><!-- colmd4 -->
-      <div class="col-md-4">
+      <div class="col-xs-6 col-md-4">
           <h2>Aside</h2>
           <h3>Why we care about outlines.</h3>
           <h4>Document outlines rely on heading structure, and this was and is used to generate outlines for assitive technology.<a href="http://webaim.org/projects/screenreadersurvey/#headings">See the results of an earlier webaim survey here.</a>
@@ -151,10 +151,10 @@
     </section>
     <section><!-- opens section for finding the right styles -->
     <div class="container-fluid main_color" style="background:#e3e7ea">
-    <div class="col-md-12" style="border-bottom-style:solid;border-width:3px;border-bottom-color:#000000;">
+    <div class="row" style="border-bottom-style:solid;border-width:3px;border-bottom-color:#000000;">
       <h2>Finding the Right Styles</h2>
     </div>
-      <div class="col-md-4">
+      <div class="col-xs-6 col-md-4">
         <h3>Image Four: Chrome Browser Tool</h3>
         <figure id="fig4">
         <img id="img4" src="http://cook-my-catch.com/T3special/BrowserToolStyle.jpg" class="img-responsive" alt="Screenshot showing css style information generated by using the F12 key on Chrome.">
@@ -162,7 +162,7 @@
         </figure>
         <h4>content</h4>
       </div><!-- closes colmd4 -->
-      <div class="col-md-4">
+      <div class="col-xs-6 col-md-4">
           <h3>Image Five</h3>
           <figure id="fig5">
         <img id="img5" src="http://cook-my-catch.com/T3special/Styles-1.jpg" class="img-responsive" alt="Screenshot showing the use of Firebug to extract css colors from USFSP webpage.">
@@ -170,53 +170,53 @@
         </figure>
         <h4>content</h4>
       </div><!-- closes md4 -->
-      <div class="col-md-4">
+      <div class="col-xs-6 col-md-4">
           <h3>Image Six</h3>
           <figure id="fig6">
         <img id="img6" src="http://cook-my-catch.com/T3special/Styles-2.jpg" class="img-responsive" alt="Screenshot showing the use of Firebug to extract css styles from USFSP webpage.">
         <figcaption id="figcaptionimg6">Using Firebug to find css styles from USFSP web page</figcaption>
+        </figure>
         <h4>content</h4>
       </div><!-- closes md4 -->
     </div><!-- closes container fluid -->    
     </section>
     </main><!-- all else are references -->
     <div class="container-fluid footer_color footer_one">
-    <footer><!-- USFSP footer color -->
-        <div class="col-md-12 footer_one_underline">
+      <footer>
+        <div class="row footer_one_underline">
           <h2>References</h2>
-        </div>
-      <div class="col-md-4">
+        </div><!-- closes colmd12 underline-->
+      <div class="col-xs-6 col-md-4">
       <ul>
         <li><a href="http://gsnedders.html5.org/outliner/">HTML5 Outliner Tool</a></li>
         <li><a href="https://validator.w3.org/">Nu Validator</a></li>
         <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document">Notes on Assistive Technology and Validation</a></li>
         <li><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-article-element">Each article should be identified, typically by including a heading (h1–h6 element) as a child of the article element.</a></li>
       </ul>  
-      </div>
-      <div class="col-md-4">
+      </div><!-- closes md4 one -->
+      <div class="col-xs-6 col-md-4">
           <ul>
             <li><a href="http://getbootstrap.com/">Bootstrap Home Page</a></li>
             <li><a href="https://github.com/twbs/bootstrap">Bootstrap on Github</a></li>
             <li><a href="http://getbootstrap.com/getting-started/">Basic Bootstrap Template</a></li> 
           </ul>
-      </div>
-      <div class="col-md-4">third column
-      </div><!-- closes colmd4 -->
-      </div>
+      </div><!-- closes md4 two -->
+      <div class="col-xs-6 col-md-4">third column
+      </div><!-- closes colmd4 three-->
       </footer>
     </div><!-- closes container fluid for first usfsp green footer -->
 <footer itemscope itemtype="http://schema.org/Person">
 <div class="container-fluid footer_two">
-  <div class="col-md-12">
+  <div class="row">
    <h5>Contact</h5>
    </div><!-- closes col md12 -->
-   <div class="col-md-4">
+   <div class="col-xs-6 col-md-4">
      <dl>
          <dt>Name</dt>
          <dd itemprop="name">Sharon Austin</dd>
      </dl>
      </div><!--closes col md4 -->
-     <div class="col-md-4">
+     <div class="col-xs-6 col-md-4">
      <dl>
          <dt>Position</dt>
          <dd><span
@@ -227,7 +227,7 @@
           </dd>
      </dl>
      </div><!--closes col md4 -->
-     <div class="col-md-4">
+     <div class="col-xs-6 col-md-4">
      <h5>Pages</h5>
      <ul>
          <li><a href="https://cook-my-catch.github.io/"
@@ -249,5 +249,4 @@
     <script src="http://cook-my-catch.com/bootstrap-master-1july2015/bootstrap-master/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-                         
-                   
+                            
