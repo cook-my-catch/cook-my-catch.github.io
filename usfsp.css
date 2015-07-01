@@ -47,6 +47,12 @@ body {
    color:#ffffff;
 }
 
+.footer_one ul, li {
+   text-decoration:underline;
+   color:#cccccc;
+}
+
+
 .footer_one_underline {
    border-bottom-style:solid;
    border-width:3px;
