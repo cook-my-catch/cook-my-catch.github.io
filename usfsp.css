@@ -88,3 +88,9 @@ figcaption {
 }
 /* triangle-right &#x25BA;*/
    
+.logo {
+    color:#ffffff;
+    background-color:#000000;
+    margin-left:25px;
+    padding-bottom:25px;
+}
