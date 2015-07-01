@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Coding Exercise</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- USFSP -->
+    <!-- <link rel='stylesheet' id='avia-google-webfont' href='//fonts.googleapis.com/css?family=PT+Sans%7COpen+Sans:400,600%7CEB+Garamond' type='text/css' media='all'/> -->
+    <link href="usfsp.css" rel="stylesheet">
+    <!-- end USFSP -->
+  </head>
+  <body class="wrap_all">
+    <div class="container-fluid header hfgreen">
+      <div class="col-md-12">
+    <header>
+      <h1>Coding Exercise</h1>
+      </header>
+      <nav>
+        <header><h3>Nav Menu</h3></header>
+        <ul>
+          <li>Source Documents</li>
+          <li>Validation</li>
+          <li>Illustrations</li>
+        </ul>
+      </nav>
+      <!--enter here for Bootstrap nav class -->
+       <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Coding Exercise</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <input type="text" placeholder="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+          </form>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+      <!-- stop here for Bootstrap nav class -->
+      </div><!-- closes md12 -->
+  </div><!-- closes container fluid -->
+  <main><!-- used for accessibility, screen readers will announce entering main section-->
+    <div class="container-fluid main_color">
+      <div class="col-md-12">
+      <header><h2>How I Built This Web Page</h2></header>
+      </div><!-- closes colmd12 -->
+    </div><!-- closes containerfluid main_color with header How I built the web page-->
+    <div class="container-fluid main_color" style="background:#e3e7ea">
+        <div class="col-md-8">
+          <section>
+          <h2>Introduction</h2>
+          </section>
+          </div><!-- closes col md4 -->
+      <div class="col-md-4">
+        Aside for PHP scraping...or
+        <h3>What about HTML5 and the h1 tags?</h3>
+        <a href="http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824">Why we are told that using multiple h1 tags is GOOD</a><br />
+        <a href="https://www.w3.org/wiki/HTML/Usage/Headings/h1only">Why we are told using multiple h1 tags is BAD</a>
+      </div><!-- closes colmd4 -->
+     </div><!-- closes container-fluid main_color -->
+    <section>
+    <div class="container-fluid main_color" style="background:#e3e7ea">
+      <div class="col-md-12" style="border-bottom-style:solid;border-width:3px;border-bottom-color:#000000;">
+        <h2>Looking for Problems</h2>
+      </div><!-- closes colmd12 -->
+      <div class="col-md-4">
+        <h3>Image One: Console Tool</h3>
+        <figure id="fig1">
+        <img id="img1" src="http://cook-my-catch.com/T3special/ConsoleTool-1.gif" class="img-responsive" alt="Screenshot showing use of a browser console tool.  Most warnings were of a failure to load resource.">
+        <figcaption id="figcaptionimg1">Caption for Figure One</figcaption>
+        </figure>
+        <h4>Captions are displayed on the web page, but not in outline view.  Alt text is necessary for screen-readers.</h4>
+      </div><!-- closes colmd4 -->
+      <div class="col-md-4">
+          <h3>Image Two</h3>
+        <img src="http://cook-my-catch.com/T3special/NuChecker-1.gif" class="img-responsive" alt="Screenshot showing default interface.">
+        <h4>content</h4>
+      </div><!-- closes md4 -->
+      <div class="col-md-4">
+          <h3>Image Three</h3>
+        <img src="http://cook-my-catch.com/T3special/W3CChecker-1.gif" class="img-responsive" alt="Screenshot showing default interface.">
+        <h4>content</h4>
+        </div><!-- closes md4 -->
+      </div><!-- closes container fluid -->  
+    </section>
+    <section>
+    <div class="container-fluid main_color">
+      <div class="col-md-4">
+        <h2>Outlines</h2>
+        <h3>4.3.10.1 Creating an outline</h3>
+        <h4>There are currently no known implementations of the outline algorithm in graphical browsers or assistive technology user agents, although the algorithm is implemented in other software such as conformance checkers. Therefore the outline algorithm cannot be relied upon to convey document structure to users. Authors are advised to use heading rank (h1-h6) to convey document structure.</h4>
+        <h4>Source: <a href="http://www.w3.org/TR/html5/sections.html#outlines">4.3. HTML5 Outlines</a></h4>
+      </div><!-- closes colmd4 -->
+      <div class="col-md-4">
+          <h2>Conformance:</h2>
+          <ul>
+            <li>Conformance and Validation are not the same thing.</li>
+            <li>There are differences between the w3c validator and the nu markup checker.</li>
+            <li>There are differences between W3C HTML and WHATWG HTML conformance.</li>
+            <li>DTD and Schema are not equivalent.</li>
+          </ul>
+          <h4>Source: <a href="http://html5doctor.com/html5-check-it-before-you-wreck-it-with-miketm-smith/">Check It Before You Wreck It</a></h4>
+      </div><!-- colmd4 -->
+      <div class="col-md-4">
+          <h2>Aside</h2>
+          <h3>Why we care about outlines.</h3>
+          <h4>Document outlines rely on heading structure, and this was and is used to generate outlines for assitive technology.<a href="http://webaim.org/projects/screenreadersurvey/#headings">See the results of an earlier webaim survey here.</a>
+          <a href="http://webaim.org/projects/screenreadersurvey5/">Screen Reader Survey #5 (2014)</a>&nbsp;65% of Respondents use headings to navigate through the page.</h4>
+          <h4>Does the HTML5 header element help?</h4>
+          <h4>The HTML5 header element does not take part in the outline algorithm. The header element is not sectioning content; it doesn't introduce a new section.</h4>
+          <a href="http://www.w3.org/TR/2014/CR-html5-20140731/sections.html#the-header-element">Link to the W3C reference</a>
+      </div><!-- closes md4 -->
+    </div><!-- closes container fluid -->
+    </section>
+    <section><!-- opens section for finding the right styles -->
+    <div class="container-fluid main_color" style="background:#e3e7ea">
+    <div class="col-md-12" style="border-bottom-style:solid;border-width:3px;border-bottom-color:#000000;">
+      <h2>Finding the Right Styles</h2>
+    </div>
+      <div class="col-md-4">
+        <h3>Image One</h3>
+        <img src="http://cook-my-catch.com/T3special/BrowserToolStyle.jpg" class="img-responsive" alt="Screenshot showing default interface.">
+        <h4>content</h4>
+      </div><!-- closes colmd4 -->
+      <div class="col-md-4">
+          <h3>Image Two</h3>
+        <img src="http://cook-my-catch.com/T3special/Styles-1.jpg" class="img-responsive" alt="Screenshot showing default interface.">
+        <h4>content</h4>
+      </div><!-- closes md4 -->
+      <div class="col-md-4">
+          <h3>Image Three</h3>
+        <img src="http://cook-my-catch.com/T3special/Styles-2.jpg" class="img-responsive" alt="Screenshot showing default interface.">
+        <h4>content</h4>
+      </div><!-- closes md4 -->
+    </div><!-- closes container fluid -->    
+    </section>
+    </main><!-- all else are references -->
+    <div class="container-fluid footer_color">
+    <footer><!-- USFSP footer color -->
+        <div class="col-md-12" style="border-bottom-style:solid;border-width:3px;border-bottom-color:#ffffff;">
+      <h2>References</h2>
+    </div>
+      <div class="col-md-4">
+      <ul>
+        <li><a href="http://gsnedders.html5.org/outliner/">HTML5 Outliner Tool</a></li>
+        <li><a href="https://validator.w3.org/">Nu Validator</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document">Notes on Assistive Technology and Validation</a></li>
+        <li><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-article-element">Each article should be identified, typically by including a heading (h1–h6 element) as a child of the article element.</a></li>
+      </ul>  
+      </div>
+      <div class="col-md-4">
+          <ul>
+            <li><a href="http://getbootstrap.com/">Bootstrap Home Page</a></li>
+            <li><a href="https://github.com/twbs/bootstrap">Bootstrap on Github</a></li>
+            <li><a href="http://getbootstrap.com/getting-started/">Basic Bootstrap Template</a></li> 
+          </ul>
+      </div>
+      <div class="col-md-4">
+      </div><!-- closes colmd4 -->
+      </footer>
+    </div><!-- closes container fluid for first usfsp green footer -->
+<footer itemscope itemtype="http://schema.org/Person">
+<div class="container-fluid" style="background:#000000;color:#ffffff;">
+  <div class="col-md-12">
+   <h5>Contact</h5>
+   </div><!-- closes col md12 -->
+   <div class="col-md-4">
+     <dl>
+         <dt>Name</dt>
+         <dd itemprop="name">Sharon Austin</dd>
+     </dl>
+     </div><!--closes col md4 -->
+     <div class="col-md-4">
+     <dl>
+         <dt>Position</dt>
+         <dd><span
+               itemprop="jobTitle">User Applications Specialist
+             </span> for
+             <span itemprop="affiliation">USFSP
+             </span>
+          </dd>
+     </dl>
+     </div><!--closes col md4 -->
+     <div class="col-md-4">
+     <h5>Pages</h5>
+     <ul>
+         <li><a href="https://cook-my-catch.github.io/"
+             itemprop="url">Github Page</a></li>
+         <li><a href="http://cook-my-catch.com"
+             itemprop="url">Scratch Site</a></li>
+     </ul>
+      </div>
+    </div>
+</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- check for below -->
+    <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
+                      
+              
