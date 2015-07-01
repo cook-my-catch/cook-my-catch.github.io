@@ -88,4 +88,7 @@ figcaption {
 }
 /* triangle-right &#x25BA;*/
    
-    
+.row {
+    padding-left:15px;
+    padding-right:15px;
+}
