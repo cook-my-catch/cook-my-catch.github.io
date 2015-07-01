@@ -47,7 +47,13 @@ body {
    border-bottom-style:solid;
    border-width:3px;
    border-bottom-color:#ffffff;
-   color:#ffffff;" 
+   color:#ffffff;
+}
+
+.footer_two {
+    background:#000000;
+    color:#ffffff;
+    
 }
 figcaption {
     font-weight: bold;
