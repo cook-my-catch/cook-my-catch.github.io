@@ -47,8 +47,8 @@ body {
    color:#ffffff;
 }
 
-.footer_one ul:hover, li:hover {
-    text-decoration:underline;
+.footer_one  li:hover {
+   text-decoration:underline;
    color:#cccccc;
 }
 
