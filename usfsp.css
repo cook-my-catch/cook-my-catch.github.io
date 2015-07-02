@@ -108,3 +108,15 @@ figcaption {
     border-bottom-color:#ffffff;
 }
  
+ #colorfulnav li a{
+     display:inline-block;
+     float:left;
+     color:#ffffff;
+     font-family: "Open Sans","HelveticaNeue","Helvetica Neue";
+     font-size:12px;
+     font-weight:300;
+     line-height:24px;
+     list-style:none;
+     
+     
+ }
