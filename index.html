@@ -36,9 +36,10 @@
       <nav>
         <header><h3>Nav Menu</h3></header>
         <ul>
-          <li>Source Documents</li>
-          <li>Validation</li>
-          <li>Illustrations</li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#references">References</a></li>
         </ul>
       </nav>
       <!--enter here for Bootstrap nav class -->
@@ -71,7 +72,7 @@
   </div><!-- closes container fluid -->
   <main><!-- used for accessibility, screen readers will announce entering main section-->
     <div class="container-fluid main_color">
-      <div class="col-md-12">
+      <div class="col-md-12" id="overview">
       <header><h2>How I Built This Web Page</h2></header>
       </div><!-- closes colmd12 -->
     </div><!-- closes containerfluid main_color with header How I built the web page-->
@@ -126,7 +127,7 @@
      
      <!-- first set of videos here -->
      <section>
-    <div class="container-fluid main_color">
+    <div class="container-fluid main_color" id="videos">
       <div class="col-md-12 bb">
         <h2>Videos</h2>
       </div><!-- closes colmd12 -->
@@ -211,7 +212,7 @@
     </section>
      <!-- second set of videos ends here -->
      
-    <section>
+    <section id="screenshots">
     <div class="container-fluid main_color" style="background:#e3e7ea;">
       <div class="col-md-12 bb">
         <h2>Looking for Problems</h2>
@@ -311,7 +312,7 @@
     </main><!-- all else are references -->
     <div class="container-fluid footer_color footer_one">
       <footer>
-        <div class="col-md-12 footer_one_underline">
+        <div class="col-md-12 footer_one_underline" id="references">
           <h2>References</h2>
         </div><!-- closes colmd12 underline-->
       <div class="col-md-4">
@@ -330,8 +331,9 @@
       </div><!-- closes md4 two -->
       <div class="col-md-4">
         <ul>
+          <li><a href="http://www.w3.org/TR/2008/WD-html5-diff-20080610/#absent-attributes">Absent Attributes</a></li>
           <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document">Notes on Assistive Technology and Validation</a></li>
-        <li><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-article-element">Each article should be identified, typically by including a heading (h1–h6 element) as a child of the article element.</a></li>
+          <li><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-article-element">Each article should be identified, typically by including a heading (h1–h6 element) as a child of the article element.</a></li>
         </ul>
       </div><!-- closes colmd4 three-->
       </footer>
@@ -380,3 +382,4 @@
     <script src="http://cook-my-catch.com/bootstrap-master-1july2015/bootstrap-master/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
+                              
