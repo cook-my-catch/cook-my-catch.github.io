@@ -37,21 +37,28 @@
        <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <!-- this button is commented out because too problematic for accessibility -->
+           <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Coding Exercise</a>
+          </button> -->
+         
+          <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+        <!-- <div id="navbar" class="navbar-collapse collapse"> -->
+        <!-- above line removed for accessibility issues -->
+        <div id="navbar" class="container-fluid navbar-form">
+          <!-- labels added for accessibiltiy -->
+          <form class="navbar-right">
+            <div class="form-group"><label for="email">
+              <input type="email" id="email" placeholder="Email" class="form-control"></label>
+              <!-- input type changed from text to update to html5 -->
             </div>
             <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
+              <label for="password">
+              <input type="password" id="password" placeholder="Password" class="form-control"></label>
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
           </form>
@@ -79,7 +86,7 @@
   <main><!-- used for accessibility, screen readers will announce entering main section-->
     <div class="container-fluid main_color">
       <div class="col-md-12" id="overview">
-      <header><h2>How I Built This Web Page</h2></header>
+      <header><h2>Building a web page..</h2></header>
       </div><!-- closes colmd12 -->
     </div><!-- closes containerfluid main_color with header How I built the web page-->
     
@@ -399,6 +406,5 @@
     <script src="http://cook-my-catch.com/bootstrap-master-1july2015/bootstrap-master/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-  
-               
     
+            
