@@ -112,12 +112,17 @@ figcaption {
  #colorfulnav ul, li {
      display:inline;
      list-style:none;
+     font-family: "Open Sans, PT Sans, EB Garamond";
+     font-style: normal;
+     font-size:12px;
+     font-weight:600;
  }
  #colorfulnav a {
      color:#ffffff;
-     font-family: "Open Sans";
+     font-family: "Open Sans, PT Sans, EB Garamond";
+     font-style: normal;
      font-size:12px;
-     font-weight:400;
+     font-weight:600;
      line-height:24px;
      list-style:none;
      border-top-left-radius:4px;
