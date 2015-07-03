@@ -40,7 +40,6 @@ color:#ffffff;
 h1, h2, h3, h4, h5, h6, #top .title_container .main-title, tr.pricing-row td, #top .portfolio-title, .callout .content-area, .avia-big-box .avia-innerbox, .av-special-font, .av-current-sort-title{font-family:'PT Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
 body {
   font-family:'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color#cccccc;
   
 }
 
@@ -91,14 +90,6 @@ figcaption {
 }
 /* triangle-right &#x25BA;*/
    
-.logo {
-    color:#ffffff;
-    background-color:#000000;
-    margin-left:25px;
-    padding-bottom:25px;
-    text-align:center;
-}
-
 .bb {
     border-bottom-style:solid;
     border-width:3px;
@@ -134,4 +125,4 @@ figcaption {
     text-decoration:underline;
 }
   
-  
+    
