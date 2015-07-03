@@ -60,7 +60,8 @@
               <label for="password">
               <input type="password" id="password" placeholder="Password" class="form-control"></label>
             </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
+            <label for="signin">
+            <button type="submit" id="signin" class="btn btn-success" style="margin-top:-5px;">Sign in</button></label>
           </form>
         </div><!--/.navbar-collapse -->
       </div>
@@ -125,6 +126,14 @@
         <h4>Source: <a href="http://www.w3.org/TR/html5/sections.html#outlines">4.3. HTML5 Outlines</a></h4>
       </div><!-- closes colmd4 -->
       <div class="col-md-4">
+          <h3>Why we care about outlines.</h3>
+          <h4>Document outlines rely on heading structure, and this was and is used to generate outlines for assitive technology.<a href="http://webaim.org/projects/screenreadersurvey/#headings">See the results of an earlier webaim survey here.</a>
+          <a href="http://webaim.org/projects/screenreadersurvey5/">Screen Reader Survey #5 (2014)</a>&nbsp;65% of Respondents use headings to navigate through the page.</h4>
+          <h4>Does the HTML5 header element help?</h4>
+          <h4>The HTML5 header element does not take part in the outline algorithm. The header element is not sectioning content; it doesn't introduce a new section.</h4>
+          <a href="http://www.w3.org/TR/2014/CR-html5-20140731/sections.html#the-header-element">Link to the W3C reference</a>
+      </div><!-- closes md4 -->
+            <div class="col-md-4">
           <h3>Conformance:</h3>
           <ul>
             <li>Conformance and Validation are not the same thing.</li>
@@ -134,14 +143,6 @@
           </ul>
           <h4>Source: <a href="http://html5doctor.com/html5-check-it-before-you-wreck-it-with-miketm-smith/">Check It Before You Wreck It</a></h4>
       </div><!-- colmd4 -->
-      <div class="col-md-4">
-          <h3>Why we care about outlines.</h3>
-          <h4>Document outlines rely on heading structure, and this was and is used to generate outlines for assitive technology.<a href="http://webaim.org/projects/screenreadersurvey/#headings">See the results of an earlier webaim survey here.</a>
-          <a href="http://webaim.org/projects/screenreadersurvey5/">Screen Reader Survey #5 (2014)</a>&nbsp;65% of Respondents use headings to navigate through the page.</h4>
-          <h4>Does the HTML5 header element help?</h4>
-          <h4>The HTML5 header element does not take part in the outline algorithm. The header element is not sectioning content; it doesn't introduce a new section.</h4>
-          <a href="http://www.w3.org/TR/2014/CR-html5-20140731/sections.html#the-header-element">Link to the W3C reference</a>
-      </div><!-- closes md4 -->
     </div><!-- closes container fluid -->
     </section>
      <!-- rearrange ends here -->
@@ -163,6 +164,9 @@
   <source src="http://cook-my-catch.com/CEvids/sr-basicForm1.ogv" 
           type="video/ogv">
         </video>
+        <h4>Initial evaluation of Bootstrap NavBar</h4>
+        <h5>I personally thought that Bootstrap's Nav Bars were beautiful, and wanted to incorporate their style into the web page.  This is particularly true for login pages and search boxes, where those who use assistive technology will sometimes use these features as "page landmarks" in order to get their bearings on a complicated page.</h5>
+        <h5>To supplement information provided to a screen reader, I added labels to the form elements.  Adding labels helps most assistive technology, but not equally.  Each technology tends to pair with a particular browser; therefore the improvement in performance is uneven between both the technologies and browsers.</h5>
       </div><!-- closes colmd4 -->
       <div class="col-md-4">
       <h3>Video Two: Add Labels to Basic Form on Chrome</h3>
@@ -174,7 +178,8 @@
   <source src="http://cook-my-catch.com/CEvids/sr-addlabelsnovalidation.ogv" 
           type="video/ogv">
         </video>
-        <h4>On Chrome, adding labels assists the screenreader, but does not announce error messages</h4>
+        <h4>I found that on on Chrome, adding labels assists the screenreader, but does not announce error messages.</h4>
+        <h5>Because of HTML5's new form field features, I was uncertain whether the issue was HTML5, or the browser.  I did a couple of supplemental tests (videos included) and uncovered that this seems to be a browser issue.</h5>
       </div><!-- closes md4 -->
       <div class="col-md-4">
          <h3>Video Three: Add Labels to Basic Form on Firefox</h3>
@@ -187,6 +192,8 @@
           type="video/ogv">
         </video>
         <h4>On Firefox, adding labels assists the screenreader, and allows the native HTML5 validation response to be read out loud by the screenreader</h4>
+        <h5>If you play the video, you can hear the response to an invalid entry in the form field.</h5>
+        <h5 style="color:green">Time: 40sec Screen Reader Voice: "Alert. Please enter email address."</h5>
         </div><!-- closes md4 -->
       </div><!-- closes container fluid -->  
     </section>
@@ -415,4 +422,4 @@
   </body>
 </html>
     
-               
+                
