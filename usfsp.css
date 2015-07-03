@@ -133,3 +133,6 @@ figcaption {
      padding:10px;
  }
 
+#colorfulnav a:hover {
+    text-decoration:underline;
+}
