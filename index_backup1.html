@@ -85,14 +85,26 @@
       </div><!-- closes md12 -->
   </div><!-- closes container fluid -->
   <main><!-- used for accessibility, screen readers will announce entering main section-->
-    <div class="container-fluid main_color">
+    <div class="container-fluid main_color" style="padding-top:25px;">
       <div class="col-md-12" id="overview">
       <header><h2>Building a web page..</h2></header>
-      </div><!-- closes colmd12 -->
+      </div><!-- closes colmd12-->
+      </div><!-- closes containerfluid -->
+      <div class="container-fluid main_color">
+      <div class="col-md-12" style="text-align:right;">
+        <header><h2 class="sr-only">Search</h2></header>
+         <div class="input-group">
+      <label for="search">
+        <!-- changed input type from text to search see http://www.w3.org/TR/html-markup/input.search.html -->
+      <input type="search" class="form-control" id="search" placeholder="Search for..."></label>
+      <span class="input-group-btn"><label for="go">
+        <button class="btn btn-default" id="go" type="button" style="margin-top:-5px;margin-left:25px;">Go!</button></label>
+      </span>
+      </div><!-- /input-group -->
+      </div><!-- md12-->
     </div><!-- closes containerfluid main_color with header How I built the web page-->
-    
-    <!-- Start of Visual -->
 
+  <!-- Start of Visual -->
  <div class="container-fluid">
    <div class="col-md-12"><img src="http://cook-my-catch.com/T3special/public-domain-lion-image-web.jpg" class="img-responsive" alt="old graphic print of a grumpy lion">&nbsp;</div>
  </div>
@@ -108,9 +120,7 @@
           </div><!-- closes col md4 -->
       <div class="col-md-4">
         Aside for PHP scraping...or
-        <h3>What about HTML5 and the h1 tags?</h3>
-        <a href="http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824">Why we are told that using multiple h1 tags is GOOD</a><br />
-        <a href="https://www.w3.org/wiki/HTML/Usage/Headings/h1only">Why we are told using multiple h1 tags is BAD</a>
+
       </div><!-- closes colmd4 -->
      </div><!-- closes container-fluid main_color -->
      <!-- rearrange starts here -->
@@ -134,6 +144,9 @@
           <a href="http://www.w3.org/TR/2014/CR-html5-20140731/sections.html#the-header-element">Link to the W3C reference</a>
       </div><!-- closes md4 -->
             <div class="col-md-4">
+        <h3>What about HTML5 and the h1 tags?</h3>
+          <a href="http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824">Why we are told that using multiple h1 tags is GOOD</a><br />
+          <a href="https://www.w3.org/wiki/HTML/Usage/Headings/h1only">Why we are told using multiple h1 tags is BAD</a>
           <h3>Conformance:</h3>
           <ul>
             <li>Conformance and Validation are not the same thing.</li>
@@ -214,6 +227,7 @@
   <source src="http://cook-my-catch.com/CEvids/sr-collapsedannounced-nofocus.ogv" 
           type="video/ogv">
         </video>
+        <h4>Here I discover that the screen reader announces that there is a navigation button that is collapsed, but I cannot reach it--it has no focus.</h4>
       </div><!-- closes colmd4 -->
       <div class="col-md-4">
       <h3>Video Five: Basic HTML5 Form on Chrome</h3>
@@ -225,6 +239,7 @@
   <source src="http://cook-my-catch.com/CEvids/sr-basicHTML5formChrome.ogv" 
           type="video/ogv">
         </video>
+        <h4>Testing basic HTML5 form functionality on Chrome. The alerts aren't read in a logical manner.</h4>
       </div><!-- closes md4 -->
       <div class="col-md-4">
          <h3>Video Six: Basic HTML5 Form on Firefox</h3>
@@ -236,6 +251,7 @@
   <source src="http://cook-my-catch.com/CEvids/sr-basicHTML5formFirefox.ogv" 
           type="video/ogv">
         </video>
+        <h4>Testing basic HTML5 form functionality on Firefox.  It has a better performance than Chrome in terms of alerts.</h4>
         </div><!-- closes md4 -->
       </div><!-- closes container fluid -->  
     </section>
@@ -260,7 +276,7 @@
         <img id="img2" src="http://cook-my-catch.com/T3special/NuChecker-1.gif" class="img-responsive" alt="Screenshot showing the interface for the NuValidator.">
         <figcaption id="figcaptionimg2">Interface for W3C NuValidator for HTML5</figcaption>
         </figure>
-        <h4>content</h4>
+        <h4>This is the validator recommended for validating HTML5</h4>
       </div><!-- closes md4 -->
       <div class="col-md-4">
           <h3>Image Three: W3C Validator</h3>
@@ -268,7 +284,7 @@
         <img id="img3" src="http://cook-my-catch.com/T3special/W3CChecker-1.gif" class="img-responsive" alt="Screenshot showing interface for standard W3C validator.">
         <figcaption id="figcaptionimg3">Standard W3C Validator</figcaption>
         </figure>
-        <h4>content</h4>
+        <h4>Older validator for HTML</h4>
         </div><!-- closes md4 -->
       </div><!-- closes container fluid -->  
     </section>
@@ -285,23 +301,23 @@
         <img id="img4" src="http://cook-my-catch.com/T3special/BrowserToolStyle.jpg" class="img-responsive" alt="Screenshot showing css style information generated by using the F12 key on Chrome.">
         <figcaption id="figcaptionimg4">Using F12 on Chrome to inspect for styles</figcaption>
         </figure>
-        <h4>content</h4>
+        <h4>Using F12 key to bring up Chrome developer tool</h4>
       </div><!-- closes colmd4 -->
       <div class="col-md-4">
-          <h3>Image Five</h3>
+          <h3>Image Five: Firefox Console Inspector</h3>
           <figure id="fig5">
         <img id="img5" src="http://cook-my-catch.com/T3special/Styles-1.jpg" class="img-responsive" alt="Screenshot showing the use of Firebug to extract css colors from USFSP webpage.">
         <figcaption id="figcaptionimg5">Using Firebug to find css colors from USFSP web page</figcaption>
         </figure>
-        <h4>content</h4>
+        <h4>Firebug developer tool</h4>
       </div><!-- closes md4 -->
       <div class="col-md-4">
-          <h3>Image Six</h3>
+          <h3>Image Six: Another View Console Inspector</h3>
           <figure id="fig6">
         <img id="img6" src="http://cook-my-catch.com/T3special/Styles-2.jpg" class="img-responsive" alt="Screenshot showing the use of Firebug to extract css styles from USFSP webpage.">
         <figcaption id="figcaptionimg6">Using Firebug to find css styles from USFSP web page</figcaption>
         </figure>
-        <h4>content</h4>
+        <h4>Example of how USFSP CSS styles were obtained.</h4>
       </div><!-- closes md4 -->
     </div><!-- closes container fluid -->    
     </section>
@@ -317,7 +333,7 @@
         <img id="img7" src="http://cook-my-catch.com/T3special/bootstrap-mobile.jpg" class="img-responsive" alt="Screenshot showing an example provided by Bootstrap for mixed mobile and desktop framework.">
         <figcaption id="figcaptionimg7">Example provided by Bootstrap for mixed mobile and desktop framework</figcaption>
         </figure>
-        <h4>content</h4>
+        <h4>Baseline wireframe</h4>
       </div><!-- closes colmd4 -->
       <div class="col-md-4">
           <h3>Image Eight: Code Project on Bootstrap mixed layout</h3>
@@ -325,7 +341,7 @@
         <img id="img8" src="http://cook-my-catch.com/T3special/project-mobile.jpg" class="img-responsive" alt="Screenshot showing the project using a mixed Bootstrap framework.">
         <figcaption id="figcaptionimg8">Screenshot showing the project using the mixed Bootstrap framework</figcaption>
         </figure>
-        <h4>content</h4>
+        <h4>Project using mixed grid</h4>
       </div><!-- closes md4 -->
       <div class="col-md-4">
           <h3>Image Nine: Final Decision Responsive Desktop</h3>
@@ -333,7 +349,7 @@
         <img id="img9" src="http://cook-my-catch.com/T3special/project-responsive.jpg" class="img-responsive" alt="Screenshot showing the preferred framework where content is not too crowded.">
         <figcaption id="figcaptionimg9">Preferred layout allows better visual cognition -- content is not too crowded.</figcaption>
         </figure>
-        <h4>content</h4>
+        <h4>Responsive Desktop</h4>
       </div><!-- closes md4 -->
     </div><!-- closes container fluid -->    
     </section>
@@ -373,6 +389,7 @@
           <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document">Notes on Assistive Technology and Validation</a></li>
           <li><a href="http://www.w3.org/html/wg/drafts/html/master/semantics.html#the-article-element">The Article Element.</a></li>
           <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html">WCAG Navigation Elements</a></li>
+          <li><a href="http://www.w3.org/TR/html-markup/input.search.html">HTML5 Input Type Search</a></li>
         </ul>
       </div><!-- closes colmd4 three-->
       </footer>
@@ -400,13 +417,7 @@
      </dl>
      </div><!--closes col md4 -->
      <div class="col-md-4">
-     <h5>Pages</h5>
-     <ul>
-         <li><a href="https://cook-my-catch.github.io/"
-             itemprop="url">Github Page</a></li>
-         <li><a href="http://cook-my-catch.com"
-             itemprop="url">Scratch Site</a></li>
-     </ul>
+        &nbsp;
       </div>
     </div>
 </footer>
@@ -421,5 +432,5 @@
     <script src="http://cook-my-catch.com/bootstrap-master-1july2015/bootstrap-master/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
-    
-                
+      
+                    
