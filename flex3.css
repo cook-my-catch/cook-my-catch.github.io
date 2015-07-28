@@ -228,8 +228,58 @@
   order: 2;
 } 
 
-.flex-item-applegreen {
+.flex-item-usfapple {
   background: #9CCB3B;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 2;
+} 
+.flex-item-usfsky {
+  background: #29AFCE;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 2;
+} 
+
+.flex-item-usfsilvergray {
+  background: #7E96A0;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 2;
+} 
+
+.flex-item-usfseaglass {
+  background: #80B0A6;
   border-left:15px solid #000000;
   padding: 5px;
   width: 200px;
