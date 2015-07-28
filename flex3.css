@@ -13,94 +13,7 @@
 
 /*end online offline status indicator styling */ 
 /*Source https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes */
-  body {
-   font: 16px Arial, Helvetica;
-   /* background: #999999;*/
-   background:#ffffff;
-   color: #711212;
-  }
 
-  #main {
-   min-height: 800px;
-   margin: 0px;
-   padding: 0px;
-   display: -webkit-flex;
-   display:         flex;
-   -webkit-flex-flow: row;
-           flex-flow: row;
-   }
- 
-  #main > article {
-   margin: 4px;
-   padding: 5px;
-   border: 1px solid #cccc33;
-   border-radius: 7pt;
-   background: #dddd88;
-   -webkit-flex: 3 1 60%;
-           flex: 3 1 60%;
-   -webkit-order: 2;
-           order: 2;
-   }
-  
-  #main > nav {
-   margin: 4px;
-   padding: 5px;
-   border: 1px solid #8888bb;
-   border-radius: 7pt;
-   background: #ccccff;
-   -webkit-flex: 1 6 20%;
-           flex: 1 6 20%;
-   -webkit-order: 1;
-           order: 1;
-   }
-  
-  #main > aside {
-   margin: 4px;
-   padding: 5px;
-   border: 1px solid #8888bb;
-   border-radius: 7pt;
-   background: #ccccff;
-   -webkit-flex: 1 6 20%;
-           flex: 1 6 20%;
-   -webkit-order: 3;
-           order: 3;
-   }
- /*removed header from the styling below which included both header and footer */
-  footer {
-   display: block;
-   margin: 4px;
-   padding: 5px;
-   min-height: 100px;
-   /* take away the min-height and the text overruns */
-   /*border: 1px solid #eebb55;*/
-   border-radius: 7pt;
-   /*background: #ffeebb;*/
-   background: #000000;
-   color:#ffffff;
-   }
- 
-  /* Too narrow to support three columns */
-  @media all and (max-width: 640px) {
-  
-   #main, #page {
-    -webkit-flex-flow: column;
-            flex-direction: column;
-   }
-
-   #main > article, #main > nav, #main > aside {
-    /* Return them to document order */
-    -webkit-order: 0;
-            order: 0;
-   }
-  
-   #main > nav, #main > aside, header, footer {
-    min-height: 50px;
-    max-height: 50px;
-   }
-  }
-  
-  /*above bracket closes minimized window at 640 px */
- 
  /* Below adapted from CSS Tricks  https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
 .flex-container {
   padding: 0;
@@ -132,7 +45,7 @@
   text-align: center;
   overflow: hidden;
   flex-grow: 1;
-  order: 1;
+  /* order: 1; */
 } 
 
 /* add blue color to above 00ccff */
@@ -151,7 +64,7 @@
   text-align: center;
   overflow: hidden;
   flex-grow: 1;
-  order: 4;
+  /* order: 4; */
 } 
 
 .flex-item a, a:active {
@@ -225,7 +138,7 @@
   text-align: center;
   overflow: hidden;
   flex-grow: 1;
-  order: 2;
+  /* order: 2;*/
 } 
 
 .flex-item-usfapple {
@@ -242,7 +155,7 @@
   text-align: center;
   overflow: hidden;
   flex-grow: 1;
-  order: 2;
+  order: 1;
 } 
 .flex-item-usfsky {
   background: #29AFCE;
@@ -275,7 +188,7 @@
   text-align: center;
   overflow: hidden;
   flex-grow: 1;
-  order: 2;
+  order: 3;
 } 
 
 .flex-item-usfseaglass {
@@ -292,7 +205,7 @@
   text-align: center;
   overflow: hidden;
   flex-grow: 1;
-  order: 2;
+  order: 4;
 } 
 .flex-item-brick a, a:active {
   background: #993333;
