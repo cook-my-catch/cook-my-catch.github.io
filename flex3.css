@@ -227,6 +227,23 @@
   flex-grow: 1;
   order: 2;
 } 
+
+.flex-item-applegreen {
+  background: #9CCB3B;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 2;
+} 
 .flex-item-brick a, a:active {
   background: #993333;
   padding: 5px;
