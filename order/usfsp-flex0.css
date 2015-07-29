@@ -1,0 +1,423 @@
+ /* beginning of online or offline status indicators */
+ #status {
+      color: #FFFFFF;
+      padding: 5px;
+   
+ }
+ .online {    
+          background: green;
+        }
+.offline {
+          background:  red;  
+        }
+
+/*end online offline status indicator styling */ 
+/*Source https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes */
+
+ /* Below adapted from CSS Tricks  https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+  /*add flex-wrap: wrap; this seems to solve the wrap-around problem for CSS tricks example*/
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.flex-item {
+  background: tomato;
+  border-left:15px solid #993333;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  /* order: 1; */
+} 
+
+/* add blue color to above 00ccff */
+
+.flex-item-blue {
+  background: #333366;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  /* order: 4; */
+} 
+
+.flex-item a, a:active {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+
+.flex-item-blue a, a:active {
+  background: #333366;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-blue a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-brick {
+  background: #993333;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  /* order: 2;*/
+} 
+
+.flex-item-usfapple {
+  background: #9CCB3B;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 1;
+} 
+.flex-item-usfsky {
+  background: #29AFCE;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 2;
+} 
+
+.flex-item-usfsilvergray {
+  background: #7E96A0;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 3;
+} 
+
+.flex-item-usfseaglass {
+  background: #80B0A6;
+  border-left:15px solid #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 4;
+} 
+.flex-item-brick a, a:active {
+  background: #993333;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-brick a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+.flex-item-usfapple a, a:active {
+  background: #993333;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-usfapple a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+.flex-item-usfsky a, a:active {
+  background: #993333;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-usfsky a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+.flex-item-usfsilvergray a, a:active {
+  background: #993333;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-usfsilvergray a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+}
+.flex-item-usfseaglass a, a:active {
+  background: #993333;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-usfseaglass a:hover, a:focus {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-black {
+  background: #000000;
+  border-left:15px solid #ff0000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  overflow: hidden;
+  flex-grow: 1;
+  order: 3;
+} 
+.flex-item-black a, a:active {
+  background: #000000;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+.flex-item-black a:hover, a:focus {
+  background: #993333;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  text-decoration:none;
+} 
+
+/*above is end of code modified and adapted from CSS tricks */
+/* below from http://webaim.org/techniques/css/invisiblecontent/ */      
+  #skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}     
+   
+/* below to test content before and after */
+/* also see reference https://css-tricks.com/css-content/ */
+.flex-item::before { 
+    content: "To Do: ";
+}
+.flex-item-brick::before { 
+    content: "Link: ";
+}
+
+.flex-item-brick a:visited:before {
+   content:  "\2713 ";
+}
+
+/* end test content before and after */  
+      
