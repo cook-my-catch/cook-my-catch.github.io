@@ -23,7 +23,6 @@ Task:
 
     Add custom styles to your page so it matches the usfsp.edu site in terms of colors and typography.
 
-In addition to meeting the specifications outlined above, we are interested in the quality of the markup written. We would also appreciate a brief (less than 500 word) description of how the exercise was completed. In this description, you might touch on the tools that you used to complete the work, how you went about developing the code, any additional research you did, etc.
 
 
 
