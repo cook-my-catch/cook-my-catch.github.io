@@ -106,24 +106,11 @@
     <div class="container-fluid">
       <div class="col-md-12">
         <h3>Mobile Test 10 August 2015</h3>
-        <h4>Critical Failure One: Excess PAGE SIZE LIMIT</h4>
-        <p>The total size of the page (2.7MB) exceeds 20 kilobytes (Primary document: 25.5KB, Images: 2.5MB, Style sheets: 149.7KB)PAGE SIZE LIMIT</p>
-        <h4>Validator Response Follows</h4>
-        <p>Why?
-Big pages require a possibly high cost and a long waiting time in many mobile networks. For instance, on many mobile networks, downloading 100KB worth of data takes as long as 1 minute.
-How?
-Focus on the piece of information that you want to deliver. Scale down images to a reasonable size. Remove images that are not essential to the layout of the page. Make sure to separate CSS styles defined for screen and handheld media types so that only relevant CSS styles are downloaded by most devices.
-Where?
-Triggered by the resource under test.
-More information
-Severity: critical
-Most mobile devices will not be able to render (part of) the page or will not be able to render the page in a reasonable time frame. Critical failures should be addressed first!
-Category: Keep it small
-Smaller sites make users happier by costing less in time and money.
-Best practice:
-Ensure that the overall size of page is appropriate to the memory limitations of the device.</p>
-        <h4>To correct: Step One. Remove (Comment Out) the images.</h4>
-        <h4 style="color:#ff0000;">Additional Note: jpeg images were marked as invalid markup.  Find out why.</h4>
+        <h4>Critical Failure One: Excess PAGE SIZE LIMIT (Continued) </h4>
+        <p>After commenting out images from Step One, the total size of the page (178.4KB) exceeds 20 kilobytes (Primary document: 28.7KB, Images: 0, Style sheets: 149.7KB)</p>
+        <h4>Relevant Validator Response</h4>
+        <p>Focus on the piece of information that you want to deliver. Scale down images to a reasonable size. Remove images that are not essential to the layout of the page. Make sure to separate CSS styles defined for screen and handheld media types so that only relevant CSS styles are downloaded by most devices.</p>
+        <h4>To correct: Step Two. Review Style Sheets</h4>
       </div>
     </div>
 
