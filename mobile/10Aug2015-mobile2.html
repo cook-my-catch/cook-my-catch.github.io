@@ -12,7 +12,9 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <!-- Below link commented out for mobile -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+    <!-- above link commented out for mobile -->
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
@@ -111,6 +113,14 @@
         <h4>Relevant Validator Response</h4>
         <p>Focus on the piece of information that you want to deliver. Scale down images to a reasonable size. Remove images that are not essential to the layout of the page. Make sure to separate CSS styles defined for screen and handheld media types so that only relevant CSS styles are downloaded by most devices.</p>
         <h4>To correct: Step Two. Review Style Sheets</h4>
+        <h4>There were four stylesheets called by the page:</h4>
+        <ul>
+          <li>http://fonts.googleapis.com/css?family=PT+Sans%7COpen+Sans:400,600%7CEB+Garamond</li>
+          <li>https://cook-my-catch.github.io/mobile/usfsp.css</li>
+          <li>https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css</li>
+          <li>https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css</li>
+        </ul>
+        <h4>Of the last two from Bootstrap, the second version, "bootstrap.min.css" had a reference to media for screen, but the "bootstrap-theme.min.css" did not.  Next. Comment out the css file that has no reference to media.</h4>
       </div>
     </div>
 
