@@ -14,9 +14,20 @@
     <header><h1>Form One Test One</h1></header>
     <section>
       <header><h2>Section One: Institutions</h2></header>
-      <label for="Institute">Institute</label>
-      <input type="text" id="instituteID" list="inistituteList">
-      <datalist id="instituteDatalistID">
+        <form method="post">
+        <fieldset>
+                <legend>Which Institution Do You Wish to Attend?</legend>
+                        <input type="checkbox" name="USF" value="USF" />USF<br />
+                        <input type="checkbox" name="USFSP" value="USFSP" />USFSP<br />
+                        <input type="checkbox" name="USFSM" value="USFSM" />USFSM<br />
+                        <input type="submit" value="Submit now" />
+        </fieldset>
+    </form>
+      
+      
+      <label for="InstituteOptions">Institute</label>
+      <input type="text" id="instituteOptionsID" list="inistituteOptionsList">
+      <datalist id="instituteOptions DatalistID">
         <option value="USF">USF</option>
         <option value="USFSP">USFSP</option>
         <option value="USFSM">USFSM</option>
