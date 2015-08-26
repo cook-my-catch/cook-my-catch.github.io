@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Test Form One</title>
+  <title>Test Form Two</title>
   <meta charset="UTF-8">
     <style>
   body, select {
@@ -36,9 +36,10 @@
 <p><b>Results:</b> <span id="results"></span></p>
 </aside>
   <article itemscope itemtype="http://schema.org/Place">
-    <header itemprop="mainEntityOfPage"><h1>Form One Test One</h1></header>
+    <header itemprop="mainEntityOfPage"><h1>Form One Test Two</h1></header>
     <section>
       <header><h2>Section One: Institutions</h2></header>
+      <form>
         <fieldset>
                 <legend>Which Institution Do You Wish to Attend?</legend>
                         <label><input type="checkbox" name="USF">USF</label>
@@ -46,6 +47,7 @@
                         <label><input type="checkbox" name="USFSM">USFSM</label>
                         <label><input type="checkbox" name="Other">Other</label>
         </fieldset>
+        </form>
     </section>
     <section>
       <header><h2>Section Two: Colleges</h2></header>
@@ -210,5 +212,18 @@
       <li><a href="http://www.html5rocks.com/en/tutorials/forms/constraintvalidation/">Form Constraint Validation</a></li>
     </ul>
   </footer>
+  <script>
+  function showValues() {
+    var fields = $( ":input" ).serializeArray();
+    $( "#results" ).empty();
+    jQuery.each( fields, function( i, field ) {
+      $( "#results" ).append( field.value + " " );
+    });
+  }
+ 
+  $( ":checkbox, :radio" ).click( showValues );
+  $( "select" ).change( showValues );
+  showValues();
+</script>
   </body>
 </html>
