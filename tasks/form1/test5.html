@@ -50,7 +50,7 @@
 <p><b>ResultsUSF:</b> <span id="resultsUSF"></span></p>
 </aside>
   <article itemscope itemtype="http://schema.org/Place">
-    <header itemprop="mainEntityOfPage"><h1>Form One Test Four</h1></header>
+    <header itemprop="mainEntityOfPage"><h1>Form One Test Five</h1></header>
     <aside><h4>Needs the following:</h4>
     <ul>
       <li style="color:red">Classes for Two, Three, Four</li>
@@ -237,6 +237,10 @@
     </section>
     <section><header><h2>Section Four: Courses</h2></header></section>
   </article>
+    <aside itemscope itemtype="http://schema.org/Person">
+    <header itemprop=""><h6>Contributors</h6></header>
+    </aside>
+  
   <aside><h6>Ampersands possibly throw errors in accessiblity testing</h6></aside>
   <footer>
     <h4>References</h4>
@@ -252,7 +256,6 @@
 
 
 
-<div itemscope itemtype="http://schema.org/Person" itemprop="Dr. Casey Frechette">
 jQuery("#institution-step input").click (function () {
     var currentState = jQuery(this).is(':checked');
     var currentID = jQuery(this).attr('id');
@@ -265,50 +268,6 @@ jQuery("#institution-step input").click (function () {
     });
 });
 
-</div>
-
-/*
-    $( "#institution-step input" ).each(function( index ) {
-      $(this)
-    });
-*/
-
-
-  /*
-  function showValues() {
-   var fields = $( ":input" ).serializeArray();
-    $( "#results" ).empty();
-    jQuery.each( fields, function( i, field ) {
-     $( "#results" ).append( field.value + " " );
-    });
-  }
- 
-  $( ":checkbox" ).click( showValues );
-  $( "select" ).change( showValues );
-  showValues();
-
-
-  function showValuesUSF() {
-    var fields = $( "input.USF" ).serializeArray();
-    $( "#resultsUSF" ).empty();
-    jQuery.each( fields, function( i, field ) {
-      $( "#resultsUSF" ).append( field.value + " " );
-    });
-  }
- 
-  $( ":checkbox" ).click( showValuesUSF );
-  $( "select" ).change( showValuesUSF );
-  showValuesUSF();
-  */
-  
-  //below from source http://stackoverflow.com/questions/9069102/jquery-serializearray-param-get-the-class-name
-  //var data = [], obj;
-  //$('form input[type=hidden]').each(function(){
-  //  obj = {};
-  //  obj[this.name] = this.value;
-  //  obj["class"] = this.className
-  //  data.push(obj);
-  //});
   
 </script>
   </body>
