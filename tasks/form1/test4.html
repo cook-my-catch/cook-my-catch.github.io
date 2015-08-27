@@ -246,7 +246,7 @@
 
 
   function showValuesUSF() {
-    var fields = $( "input .USF" ).serializeArray();
+    var fields = $( "input.USF" ).serializeArray();
     $( "#resultsUSF" ).empty();
     jQuery.each( fields, function( i, field ) {
       $( "#resultsUSF" ).append( field.value + " " );
