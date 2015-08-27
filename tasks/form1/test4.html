@@ -39,8 +39,8 @@
     <header itemprop="mainEntityOfPage"><h1>Form One Test Four</h1></header>
     <aside><h4>Needs the following:</h4>
     <ul>
-      <li>Classes for Two, Three, Four</li>
-      <li>Values for Three, Four</li>
+      <li style="color:red">Classes for Two, Three, Four</li>
+      <li style="color:red">Values for Three, Four</li>
     </ul>
     
     </aside>
@@ -237,7 +237,7 @@
     });
   }
  
-  $( ":checkbox, :radio" ).click( showValues );
+  $( ":checkbox" ).click( showValues );
   $( "select" ).change( showValues );
   showValues();
 </script>
