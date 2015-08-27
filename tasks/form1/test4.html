@@ -256,6 +256,17 @@
   $( ":checkbox" ).click( showValues );
   $( "select" ).change( showValuesUSF );
   showValuesUSF();
+  //
+  var data = [], obj;
+$('form input[type=hidden]').each(function(){
+    obj = {};
+    obj[this.name] = this.value;
+    obj["class"] = this.className
+    data.push(obj);
+});
+  
+  
+  
 </script>
   </body>
 </html>
