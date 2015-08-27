@@ -232,13 +232,13 @@
     </ul>
   </footer>
   <script>
-  function showValues() {
-    var fields = $( ":input" ).serializeArray();
-    $( "#results" ).empty();
-    jQuery.each( fields, function( i, field ) {
-      $( "#results" ).append( field.value + " " );
-    });
-  }
+  //function showValues() {
+   // var fields = $( ":input" ).serializeArray();
+    //$( "#results" ).empty();
+    //jQuery.each( fields, function( i, field ) {
+     // $( "#results" ).append( field.value + " " );
+    //});
+  //}
  
   $( ":checkbox" ).click( showValues );
   $( "select" ).change( showValues );
