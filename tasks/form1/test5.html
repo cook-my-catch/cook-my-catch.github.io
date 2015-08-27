@@ -7,27 +7,11 @@
 <meta name="viewport" content="width-device-widht, initial-scale=1">
 
 <style>
-  body, select {
-    font-size: 14px;
-  }
-  form {
-    margin: 5px;
-  }
-  p {
-    color: red;
-    margin: 5px;
-  }
-  b {
-    color: blue;
-  }
-
-
   #college-step input,
   #college-step label {
     display: none
   }
-
-
+  
   </style>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
@@ -44,23 +28,13 @@
     <li><a href="http://www.w3.org/TR/mobile-accessibility-mapping/">Mobile Accessibility Reference</a></li>
   </ul>
 </nav>
-<aside>
-<p><b>Results:</b> <span id="results"></span></p>
-</aside>
-<aside>
-<p><b>ResultsUSF:</b> <span id="resultsUSF"></span></p>
-</aside>
+
   <article itemscope itemtype="http://schema.org/CreativeWork">
     <header itemprop="mainEntityOfPage"><h1>Form One Test Five</h1></header>
-    <aside><h4>Needs the following:</h4>
-    <ul>
-      <li style="color:red">Classes for Two, Three, Four</li>
-      <li style="color:red">Values for Three, Four</li>
-    </ul>
-    
-    </aside>
+    <h2>This Page Is Under Development</h2>
+
     <section>
-      <header><h2>Section One: Institutions</h2></header>
+      <header><h3>Section One: Institutions</h3></header>
       <form id="institution-step">
         <fieldset>
                 <legend>Which Institution Do You Wish to Attend?</legend>
@@ -72,7 +46,7 @@
         </form>
     </section>
     <section>
-      <header><h2>Section Two: Colleges</h2></header>
+      <header><h3>Section Two: Colleges</h3></header>
             <form id="college-step">
                  <fieldset>
                 <legend>Which College Do You Wish to Attend?</legend>
@@ -107,7 +81,7 @@
         </form>
     </section>
     <section>
-      <header><h2>Section Three: Programs</h2></header>
+      <header><h3>Section Three: Programs</h3></header>
       <form>
       <fieldset>
                 <legend>Which Program Do You Wish to Attend?</legend>
@@ -236,26 +210,27 @@
         </fieldset>
       </form>
     </section>
-    <section><header><h2>Section Four: Courses</h2></header></section>
+    <section><header><h3>Section Four: Courses</h3></header>
+      <ul><li>TBD</li></ul>
+    </section>
   </article>
   <aside itemscope itemtype="http://schema.org/Code">
-    <header><h4>Development</h4></header>
+    <header><h3>Development</h3></header>
     <ul>
     <li itemprop="workExample">Dr. Casey Frechette, Code Development and Design</li>
     <li itemprop="contributor">Mr. Berrie Watson, Systems and User Experience</li>
     </ul>
   </aside>
 
-  <aside><header><h4>Needs to be Checked</h4></header>
+  <aside><header><h3>To Do List</h3></h3></header>
   <ul>
-   <li>Ampersands possibly throw errors in accessiblity testing</li>
+    <li>ReAssign IDs</li>
+    <li>Add new item for each campus</li>
+    <li>Automated Accessibility Testing: Section 508 testing does not match WCAG testing</li>
    </ul>
   </aside>
   <footer>
-    <h4>References</h4>
-    <ul>
-      <li><h4>Current Last Number 121 for ID</h4></li>
-      </ul>
+    <h3>References</h3>
     <ul>
       <li><a href="http://www.html5rocks.com/en/tutorials/forms/constraintvalidation/">Form Constraint Validation</a></li>
       <li><a href="http://api.jquery.com/serializeArray/">JQuery serializeArray</a></li>
