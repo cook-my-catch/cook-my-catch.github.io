@@ -62,10 +62,10 @@
                         <input type="checkbox" name="Education" value="Education" class="I-STPETE" id="C3b"><label for="C3b">Education SP</label>
                         <input type="checkbox" name="Education" value="Education" class="I-SARASOTA" id="C3c"><label for="C3c">Education SM</label>
                         
+                        <input type="checkbox" name="Human and Social Sciences" value="Human and Social Sciences" id="I-OTHER" id="C4d"><label for="C4d">Human and Social Sciences</label>
+
                         <input type="checkbox" name="Arts and Sciences" value="Arts and Sciences" id="C3"><label for="C3">Arts & Sciences</label>
                         
-                        
-                        <input type="checkbox" name="Human and Social Sciences" value="Human and Social Sciences" id="C5"><label for="C5">Human and Social Sciences</label>
                         <input type="checkbox" name="Behavioral and Community Sciences" value="Behavioral and Community Sciences" id="C6"><label for="C6">Behavioral and Community Sciences </label>
                         <input type="checkbox" name="Undergraduate Studies" value="Undergraduate Studies" id="C7"><label for="C7">Undergraduate Studies</label>
                         <input type="checkbox" name="Architecture & Community Design" value="Architecture & Community Design" id="C8"><label for="C8">Architecture & Community Design</label>
@@ -220,10 +220,11 @@
     </section>
   </article>
   <aside itemscope itemtype="http://schema.org/Code">
-    <header><h3>Development</h3></header>
+    <header><h3>Project Development</h3></header>
     <ul>
-    <li itemprop="workExample">Dr. Casey Frechette, Code Development and Design</li>
-    <li itemprop="contributor">Mr. Berrie Watson, Systems and User Experience</li>
+    <li itemprop="workExample">Dr.Frechette, Code Development and Interface Design</li>
+    <li itemprop="contributor">Mr. Watson, Systems and Advisor for User Experience</li>
+    <li itemprop="contributor">Ms. Austin</li>
     </ul>
   </aside>
 
@@ -233,6 +234,7 @@
     <li>Add new item for each campus</li>
     <li>Display: Add breaks after groups</li>
     <li>Coordinate with Casey ensure Colleges with multiple departments are accounted for in code.  E.G. Education Tampa has the same college code of (ED) but fall under two different departments Adult/Vocational/Hum Res Div (EDV) and Administration/Supervision (EDB)</li>
+    <li>Coordinate with Casey to ensure that it is okay to designate lower-case letters always match campus in naming convention</li>
     <li>Automated Accessibility Testing: Section 508 testing does not match WCAG testing</li>
     <li>Fav Icon Issue for Mobile Validation, HTTP requests</li>
    </ul>
@@ -246,9 +248,8 @@
       <li><a href="http://api.jquery.com/serializeArray/">JQuery serializeArray</a></li>
     </ul>
   </footer>
+  
   <script>
-
-
 <!-- original code block developed by Dr. Casey Frechette follows -->
 jQuery("#institution-step input").click (function () {
     var currentState = jQuery(this).is(':checked');
