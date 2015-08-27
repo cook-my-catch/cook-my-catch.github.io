@@ -256,16 +256,15 @@
   $( ":checkbox" ).click( showValues );
   $( "select" ).change( showValuesUSF );
   showValuesUSF();
-  //
-  var data = [], obj;
-$('form input[type=hidden]').each(function(){
-    obj = {};
-    obj[this.name] = this.value;
-    obj["class"] = this.className
-    data.push(obj);
-});
   
-  
+  //below from source http://stackoverflow.com/questions/9069102/jquery-serializearray-param-get-the-class-name
+  //var data = [], obj;
+  //$('form input[type=hidden]').each(function(){
+  //  obj = {};
+  //  obj[this.name] = this.value;
+  //  obj["class"] = this.className
+  //  data.push(obj);
+  //});
   
 </script>
   </body>
