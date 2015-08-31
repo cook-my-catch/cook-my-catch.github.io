@@ -572,7 +572,7 @@ jQuery("#department-step input").click (function () {
     var currentID3 = jQuery(this).attr('id');
     jQuery("#department-step input").each(function(index) {
         if (jQuery(this).hasClass(currentID3)) {
-            var displayState3 = currentState ? 'inline-block' : 'none';
+            var displayState3 = currentState3 ? 'inline-block' : 'none';
             jQuery(this).css({'display':displayState3});
             jQuery("label[for='"+jQuery(this).attr('id')+"']" ).css({'display':displayState3});
         }
