@@ -12,7 +12,10 @@
   #college-step label {
     display: none
   }
-  
+  #department-step input,
+  #department-step label {
+    display: none
+  }
 
 </style>
 
@@ -568,19 +571,7 @@ jQuery("#institution-step input").click (function () {
     });
 });
 <!-- end code block developed by Dr. Casey Frechette -->
-<!-- modified  code block developed by Dr. Casey Frechette follows -->
-jQuery("#college-step input").click (function () {
-    var currentState = jQuery(this).is(':checked');
-    var currentID = jQuery(this).attr('id');
-    jQuery("#department-step input").each(function(index) {
-        if (jQuery(this).hasClass(currentID)) {
-            var displayState = currentState ? 'inline-block' : 'none';
-            jQuery(this).css({'display':displayState});
-            jQuery("label[for='"+jQuery(this).attr('id')+"']" ).css({'display':displayState});
-        }
-    });
-});
-<!-- end modified code block developed by Dr. Casey Frechette -->
+
 
 </script>
   </body>
