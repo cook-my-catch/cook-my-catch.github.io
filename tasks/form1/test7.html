@@ -562,6 +562,7 @@
 jQuery("#institution-step input").click (function () {
     var currentState = jQuery(this).is(':checked');
     var currentID = jQuery(this).attr('id');
+    alert('step one okay');
     jQuery("#college-step input").each(function(index) {
         if (jQuery(this).hasClass(currentID)) {
             var displayState = currentState ? 'inline-block' : 'none';
@@ -577,7 +578,7 @@ jQuery("#institution-step input").click (function () {
 jQuery("#college-step input").click (function () {
     var currentState = jQuery(this).is(':checked');
     var currentIDDepartment = jQuery(this).attr('id');
-    alert('clicked college-step input');
+    alert('step two');
     jQuery("#department-step input").each(function(index) {
         if (jQuery(this).hasClass(currentIDDepartment)) {
             alert('department working');
