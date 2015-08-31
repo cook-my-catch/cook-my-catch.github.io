@@ -582,7 +582,7 @@ jQuery("#college-step input").click (function () {
     jQuery("#department-step input").each(function(index) {
         if (jQuery(this).hasClass(currentIDDepartment)) {
             alert('department working');
-            var displayState = currentState ? 'inline-block' : 'none';
+            var displayState = currentState ? 'inline-block' : 'block';
             jQuery(this).css({'display':displayState});
             jQuery("label[for='"+jQuery(this).attr('id')+"']" ).css({'display':displayState});
         }
