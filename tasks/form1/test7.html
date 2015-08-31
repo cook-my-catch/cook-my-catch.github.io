@@ -107,7 +107,7 @@
     </section>
     <section>
       <header><h3>Section Three: Departments</h3></header>
-      <form>
+      <form id="department-step">
       <fieldset>
                 <legend>Which Department/Program Are You Interested In?</legend>
                         <input type="checkbox" name="Accounting Tampa" data-code="(ACC)" value="Accounting Tampa" class="I-TAMPA" id="D1a"><label for="D1a">Accounting (Tampa)</label>
@@ -566,6 +566,20 @@ jQuery("#institution-step input").click (function () {
     });
 });
 <!-- end code block developed by Dr. Casey Frechette -->
+<!-- modified  code block developed by Dr. Casey Frechette follows -->
+jQuery("#department-step input").click (function () {
+    var currentState3 = jQuery(this).is(':checked');
+    var currentID3 = jQuery(this).attr('id');
+    jQuery("#department-step input").each(function(index) {
+        if (jQuery(this).hasClass(currentID)) {
+            var displayState3 = currentState ? 'inline-block' : 'none';
+            jQuery(this).css({'display':displayState});
+            jQuery("label[for='"+jQuery(this).attr('id')+"']" ).css({'display':displayState});
+        }
+    });
+});
+<!-- end modified code block developed by Dr. Casey Frechette -->
+
 </script>
   </body>
 </html>
