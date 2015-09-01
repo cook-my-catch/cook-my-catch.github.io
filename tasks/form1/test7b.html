@@ -561,6 +561,7 @@
   <script>
 <!-- MODIFIED original code block developed by Dr. Casey Frechette follows -->
 <!-- change institution-step to college step, and college step to department step -->
+<!-- also made college-step css "visible" by removing display none from css for college step input -->
 jQuery("#college-step input").click (function () {
     var currentState = jQuery(this).is(':checked');
     var currentID = jQuery(this).attr('id');
