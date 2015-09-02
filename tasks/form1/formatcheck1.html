@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<!-- <link rel='icon' href='data:;base64,iVBORw0KGgo='> -->
+ <title property="name">Test Form Baseline</title>
+ <meta name="viewport" content="width-device-widht, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  
+<style>
+  #college-step input,
+  #college-step label {
+    display: none
+  }
+  #department-step input,
+  #department-step label {
+    display: none
+  }
+
+</style>
+
+</head>
+<body>
+<nav>
+  <ul>
+    <li><a href="https://html5.validator.nu/">HTML5 Nu Validator</a></li>
+    <li><a href="http://jigsaw.w3.org/css-validator/">W3C CSS Validator</a></li>
+    <li><a href="https://validator.w3.org/mobile-alpha/">Mobile Tester Alpha</a></li>
+    <li><a href="https://developers.google.com/structured-data/testing-tool/">Rich Snippets Testing</a></li>
+    <li><a href="https://validator.w3.org/i18n-checker/">i18n</a></li>
+    <li><a href="http://tenon.io/">Tenon.io</a></li>
+    <li><a href="http://www.cynthiasays.com/">CynthiaSays.com</a></li>
+
+  </ul>
+</nav>
+
+  <article itemscope itemtype="http://schema.org/CreativeWork">
+    <header itemprop="mainEntityOfPage"><h1>Form One Baseline</h1></header>
+    <h2>This Page Is Under Development</h2>
+    <h3>Source Document:<span itemprop="sourceOrganization">USFSP</span>&nbsp;<a href="http://www.registrar.usf.edu/ssearch/data/dept.php" itemprop="URL">OASIS Search Page</a></h3>
+
+    <section>
+      <header><h3>Section One: Institutions</h3></header>
+      <form id="institution-step">
+        <fieldset>
+                <legend>Which Institution Do You Wish to Attend?</legend>
+                        <input type="checkbox" name="USF" value="USF" id="i-tampa"><label for="i-tampa">USF</label>
+                        <input type="checkbox" name="USFSP" value="USFSP" id="i-stpete"><label for="i-stpete">USFSP</label>
+                        <input type="checkbox" name="USFSM" value="USFSM" id="i-sarasota"><label for="i-sarasota">USFSM</label>
+                        <input type="checkbox" name="Other" value="Other" id="i-other"><label for="i-other">Other</label>
+        </fieldset>
+        </form>
+    </section>
+    <section>
+      <header><h3>Section Two: Colleges</h3></header>
+            <form id="college-step">
+                 <fieldset>
+                <legend>Which College Do You Wish to Attend?</legend>
+                        
+
+                        <input type="checkbox" name="Business Tampa" value="Business Tampa" class="i-tampa" id="c-ba"><label for="c-ba">Business (Tampa) (BA)</label>
+                        
+                        <input type="checkbox" name="Business SP" value="Business SP" class="i-stpete" id="acc-bp"><label for="acc-bp">Business (SP) (BP)</label>
+
+                        <input type="checkbox" name="Business SM" value="Business SM" class="i-sarasota" id="acc-bm"><label for="acc-bm">Business (SM) (BM)</label>                        
+
+                        <input type="checkbox" name="Technology and Innovation" value="Technology and Innovation" class="i-other" id="acc-tt"><label for="acc-tt">Technology and Innovation (Other) (TT)</label>
+                        
+                        <input type="checkbox" name="Education Tampa EDB" value="Education Tampa" class="i-tampa" id="edb-ed"><label for="edb-ed">Education (Tampa) (ED)</label>
+                        <input type="checkbox" name="Education SP EDB" value="Education SP" class="i-stpete" id="edb-ep"><label for="edb-ep">Education (SP) (EP)</label>
+
+                        <input type="checkbox" name="Education SM EDB" value="Education SM" class="i-sarasota" id="edb-em"><label for="edb-em">Education (SM) (EM)</label>
+                        
+                        <input type="checkbox" name="Human and Social Sciences EDB" value="Human and Social Sciences" class="i-other" id="edb-ht"><label for="edb-ht">Human and Social Sciences (Other) (HT)</label>
+
+                        <input type="checkbox" name="Education Tampa EDV" value="Education Tampa" class="i-tampa" id="edv-ed"><label for="edv-ed">Education (Tampa) (ED) </label>
+
+                        <input type="checkbox" name="Arts and Sciences Tampa AFA" value="Arts and Sciences Tampa" class="i-tampa"  id="afa-cs"><label for="afa-cs">Arts & Sciences (Tampa) (AS) </label>
+                        
+                        <input type="checkbox" name="Arts and Sciences SM AFA" value="Arts and Sciences SM" class="i-sarasota"  id="afa-em"><label for="afa-em">Arts & Sciences (SM) (AM)</label>
+                        
+                        <input type="checkbox" name="Behavioral and Community Sciences AGE" value="Behavioral and Community Sciences" class="i-other" id="age-bc"><label for="age-bc">Behavioral and Community Sciences (Other) (BC) </label>
+                        
+                        <input type="checkbox" name="Undergraduate Studies Tampa" value="Undergraduate Studies Tampa" class="i-tampa" id="C6a"><label for="C6a">Undergraduate Studies (Tampa)</label>
+                        <input type="checkbox" name="Undergraduate Studies SP" value="Undergraduate Studies SP" class="i-stpete" id="C6b"><label for="C6b">Undergraduate Studies (SP)</label>
+
+                        <input type="checkbox" name="Arts and Sciences SP" value="Arts and Sciences SP" class="i-stpete"  id="C4b"><label for="C4b">Arts & Sciences (SP)////</label>
+                        
+                        <input type="checkbox" name="Architecture & Community Design" value="Architecture & Community Design" class="i-other" id="C7d"><label for="C7d">Architecture & Community Design (Other)</label>
+                        
+                        <input type="checkbox" name="College of The Arts" value="College of The Arts" class="i-other" id="C8d"><label for="C8d">College of The Arts (Other)</label>
+                        
+                        <input type="checkbox" name="Undergraduate Studies Tampa" value="Undergraduate Studies Tampa" class="i-tampa" id="C9a"><label for="C9a">Undergraduate Studies (Tampa)</label>
+                        <input type="checkbox" name="Undergraduate Studies SP" value="Undergraduate Studies SP" class="i-stpete" id="C9b"><label for="C9b">Undergraduate Studies (SP)</label>
+                        
+                        <input type="checkbox" name="Medicine" value="Medicine" class="i-other" id="C10d"><label for="C10d">Medicine (Other)</label>
+                        
+                        <input type="checkbox" name="Engineering" value="Engineering" class="i-other" id="C11d"><label for="C11d">Engineering (Other)</label>
+                        
+                        <input type="checkbox" name="FMHI: de la Parte Florida Mental Health Institute" class="i-other" value="FMHI" id="C12d"><label for="C12d">FMHI: de la Parte Florida Mental Health Institute (Other)</label>
+                        
+                        <input type="checkbox" name="Human and Social Sciences" value="Human and Social Sciences" class="i-other" id="C13d"><label for="C13d">Human and Social Sciences (Other)</label>
+                        
+                        <input type="checkbox" name="Global Sustainability" value="Global Sustainability" class="i-other" id="C14d"><label for="C14d">Global Sustainability (Other)</label>
+                        
+                        <input type="checkbox" name="Public Health" value="Public Health" class="i-other" id="C15d"><label for="C15d">Public Health (Other)</label>
+                        
+                        <input type="checkbox" name="Graduate School" value="Graduate School" class="i-other" id="C16d"><label for="C16d">Graduate School (Other)</label>
+                        
+                        <input type="checkbox" name="Hotel & Tech Leadership SM" value="Hotel & Tech Leadership SM" class="i-sarasota" id="C17c"><label for="C17c">Hotel & Tech Leadership (SM)</label>
+                        
+                        <input type="checkbox" name="Marine Science" value="Marine Science" class="i-other"  id="C18d"><label for="C18d">Marine Science (Other)</label>
+                        
+                        <input type="checkbox" name="Undergraduate Studies Tampa" value="Undergraduate Studies Tampa" class="i-tampa" id="C19a"><label for="C19a">Undergraduate Studies (Tampa)</label>
+                        <input type="checkbox" name="Undergraduate Studies SP" value="Undergraduate Studies SP" class="i-stpete" id="C19b"><label for="C19b">Undergraduate Studies (SP)</label>
+
+           </fieldset>
+        </form>
+    </section>
+    <section>
+      <header><h3>Section Three: Departments</h3></header>
+      <form id="department-step">
+        <!--note for department section, use three digit code. For college section use two digit code -->
+      <fieldset>
+                <legend>Which Department/Program Are You Interested In?</legend>
+                        <input type="checkbox" name="Accounting Tampa ACC BA" data-institution="(i-tampa)" value="Accounting Tampa ACC BA" class="c-ba" id="ba-acc"><label for="ba-acc">Accounting (Tampa) (ACC)</label>
+                        <input type="checkbox" name="Accounting SP ACC BP" data-institution="(i-stpete)" value="Accounting SP ACC BP" class="acc-bp" id="bp-acc"><label for="bp-acc">Accounting (SP) (ACC)</label>
+                        <input type="checkbox" name="Accounting SM ACC BM" data-institution="(i-sarasota)" value="Accounting SM ACC BM" class="acc-bm" id="bm-acc"><label for="bm-acc">Accounting (SM) (ACC)</label>
+                        <input type="checkbox" name="Accounting Other ACC TT" data-institution="(i-other)" value="Accounting Other ACC TT" class="acc-tt" id="tt-acc"><label for="tt-acc">Accounting (Other) (ACC)</label>
+                        
+                        <input type="checkbox" name="Administration/Supervision SM EDB EM" value="Administration/Supervision SM EDB EM" data-institution="(i-sarasota)" class="edb-em" id="edb-em"><label for="edb-em">Administration/Supervision (SM) (EDB)</label>
+                        <input type="checkbox" name="Administration/Supervision SP EDB EP" value="Administration/Supervision SP EDB EP" data-institution="(i-stpete)" class="ed-edb" id="ed-edb"><label for="ed-edb">Administration/Supervision (SP) (EDB)</label>
+                        <input type="checkbox" name="Administration/Supervision Tampa EDB ED" value="Administration/Supervision SM EDB ED" data-institution="(i-tampa)" class="ba-edb" id="edb-ba"><label for="edb-ba">Administration/Supervision (Tampa) (EDB)</label>
+                        <input type="checkbox" name="Administration/Supervision Other EDB HT" value="Administration/Supervision Other EDB HT" data-institution="(i-other)" class="edb-ht" id="ht-edb"><label for="ht-edb">Administration/Supervision (Other) (EDB)</label>
+                        
+                        
+                        <input type="checkbox" name="Adult/Vocational/Hum Res Div Tampa" value="Adult/Vocational/Hum Res Div Tampa" data-institution="(i-tampa)" class="edv-ed" id="ed-edv"><label for="ed-edv">Adult/Vocational/Hum Res Div (Tampa) (EDV) </label>
+                        
+                        <input type="checkbox" name="Africana Studies Tampa AFA AS" value="Africana Studies Tampa AFA AS" data-institution="(i-tampa)" class="afa-as"  id="as-afa"><label for="as-afa">Africana Studies (Tampa) (AFA) </label>
+                        <input type="checkbox" name="Africana Studies SM AFA AM" value="Africana Studies SM AFA AM" data-institution="(i-sarasota)" class="afa-am"  id="am-afa"><label for="am-afa">Africana Studies (SM) (AFA)</label>
+
+                    
+                        <input type="checkbox" name="Aging Studies Other AGE BC" value="Aging Studies Other AGE BC" data-institution="(i-other)" class="age-bc"  id="bc-age"><label for="bc-age">Aging Studies (Other) (AGE)</label>
+
+                        
+                        <input type="checkbox" name="Air Force (ROTC) Tampa" value="Air Force (ROTC) Tampa US" data-institution="(i-tampa)" class="afr-us" id="us-afr"><label for="us-afr">Air Force (ROTC) (Tampa) (US)</label>
+                        
+                        
+                        <input type="checkbox" name="American Studies Tampa AMS AS" value="American Studies Tampa AMS AS" data-institution="(i-tampa)" class="ams-as" id="as-ams"><label for="as-ams">American Studies (Tampa) (AS) (ANS)</label>
+                        <input type="checkbox" name="American Studies SP AMS AP" value="American Studies SP AMS AP" data-institution="(i-stpete)" class="ams-ap" id="ap-ams"><label for="ap-ams">American Studies (SP) (AP) (ANS)</label>
+                        
+                        <input type="checkbox" name="Anthropology Tampa ANT AS" value="Anthropology Tampa ANT AS" data-institution="(i-tampa)"  class="ant-as" id="as-ant"><label for="as-ant">Anthropology (Tampa) (AS) (ANT)</label>
+                        <input type="checkbox" name="Anthropology SP ANT AP" value="Anthropology SP ANT AP" data-institution="(i-stpete)"  class="ant-ap" id="ap-ant"><label for="ap-ant">Anthropology (SP) (AP) (ANT) </label>
+                        <input type="checkbox" name="Anthropology SM ANT AM " value="Anthropology SM ANT AM" data-institution="(i-sarasota)"  class="ant-am" id="am-ant"><label for="am-ant">Anthropology (SM) (AM) (ANT)</label>
+                        
+                        <input type="checkbox" name="Architecture ARC AR" value="Architecture Other" data-institution="(i-other)" class="arc-ar" id="ar-arc"><label for="ar-arc">Architecture  (Other) (AR) (ARC)</label>
+                        <input type="checkbox" name="Architecture Other ARC FA" value="College of the Arts Other" data-institution="(i-other)" class="arc-fa" id="fa-arc"><label for="fa-arc">Architecture (Other) (FA) (ARC)</label>
+                        
+                        <input type="checkbox" name="Army (ROTC) Tampa MIS US" value="Army (ROTC) Tampa" data-institution="(i-tampa)" class="mis-us" id="us-mis"><label for="us-mis">Army (ROTC) (Tampa) (MIS)</label>
+                        
+                        <input type="checkbox" name="Art SP AP ART" value="Art SP AP ART" data-institution="(i-stpete)"  class="art-ap" id="ap-art"><label for="ap-art">Art (SP)</label>
+                        <input type="checkbox" name="Art SM AM ART" value="Art SM AM ART" data-institution="(i-sarasota)" class="art-am" id="am-art"><label for="am-art">Art (SM)</label>
+                        <input type="checkbox" name="Art Other FA ART" value="Art Other FA ART" data-institution="(other)"  class="art-fa" id="fa-art"><label for="fa-art">Art (Other) (FA) (ART)</label>
+                        
+                        <input type="checkbox" name="Art Education Tampa ED EDA" value="Art Education Tampa ED EDA" data-institution="(i-tampa)"  class="eda-ed" id="ed-eda"><label for="ed-eda">Art Education (Tampa) (ED) (EDA)</label>
+                        <input type="checkbox" name="Art Education SP EP EDA" value="Art Education SP EP EDA" data-institution="(i-stpete)" class="eda-ep" id="ep-eda"><label for="ep-eda">Art Education (SP) (EP) (EDA)</label>
+                        
+                        <input type="checkbox" name="Astronomy Tampa AS AST" value="Astronomy Tampa AS AST" data-institution="(i-tampa)" class="ast-as" id="as-ast"><label for="as-ast">Astronomy (Tampa) (AS) (AST) </label>
+                        <input type="checkbox" name="Astronomy SM AM AST" value="Astronomy SM AM AST" data-institution="(i-sarasota)" class="ast-am" id="am-ast"><label for="am-ast">Astronomy (SM) (AM) (AST) </label>
+                        
+                        <input type="checkbox" name="Athletic Training Other MD ATH" value="Athletic Training Other MD ATH" data-institution="(i-other)" class="ath-md" id="md-ath"><label for="md-ath">Athletic Training (Other) (MD) (ATH)</label>
+                        
+                        <input type="checkbox" name="Basic & Interdisciplinary Eng Other EN EGB" value="Basic & Interdisciplinary Eng Other EN EGB" data-institution="(i-other)" class="egb-en" id="en-egb"><label for="en-egb">Basic & Interdisciplinary Eng (Other) (EN) (EGB)</label>
+                        <input type="checkbox" name="Basic & Interdisciplinary Eng Other TT EGB " value="Basic & Interdisciplinary Eng Other TT EGB" data-institution="(i-other)" class="egb-tt" id="tt-egb"><label for="tt-egb">Basic & Interdisciplinary Eng (Other) (TT) (EGB)</label>
+
+                        
+                        <input type="checkbox" name="Biology Tampa AS BIO" value="Biology Tampa AS BIO" data-institution="(i-tampa)" class="bio-as" id="as-bio"><label for="as-bio">Biology (Tampa) (AS) (BIO) </label>
+                        <input type="checkbox" name="Biology SP AP BIO" value="Biology SP AP BIO" data-institution="(i-stpete)" class="bio-ap" id="ap-bio"><label for="ap-bio">Biology (SP) (AP) (BIO)</label>
+                        <input type="checkbox" name="Biology SM AM BIO" value="Biology SM AM BIO" data-institution="(i-sarasota)" class="bio-am" id="am-bio"><label for="am-bio">Biology (SM) (AM) (BIO) </label>
+                        
+                        <input type="checkbox" name="Biology - Integrative Tampa AS BIN" value="Biology - Integrative Tampa AS BIN" data-institution="(i-tampa)" class="bin-as" id="as-bin"><label for="as-bin">Biology - Integrative (Tampa) (AS) (BIN)</label>
+                        
+                        <input type="checkbox" name="Biology-Cell, Micro, Molecular Tampa AS BCM 1" value="Biology-Cell, Micro, Molecular Tampa AS BCM 1" data-institution="(tampa)" class="bcm-as1" id="as-bcm1"><label for="as-bcm1">Biology-Cell, Micro, Molecular (Tampa) (AS) (BCM) (1)</label>
+                         <input type="checkbox" name="Biology-Cell, Molecular & Micr Tampa" value="Biology-Cell, Molecular & Micr Tampa" data-institution="(i-tampa) "class="bcm-as2" id="as-bcm2"><label for="as-bcm2">Biology-Cell, Molecular & Micr(Tampa) (AS) (BCM) (2)</label>
+                        
+                        <input type="checkbox" name="Business Administration Tampa BA MBA" value="Business Administration Tampa BA MBA" data-institution="(i-tampa)" class="mba-ba" id="ba-mba"><label for="ba-mba">Business Administration (Tampa) (BA) (MBA)</label>
+                        <input type="checkbox" name="Business Administration SP BP MBA" value="Business Administration SP BP MBA" data-institution="(i-stpete)" class="mba-bp" id="bp-mba"><label for="bp-mba">Business Administration (SP) (BP) (MBA)</label>
+                        
+                        <input type="checkbox" name="Business Administration Tampa BA GBA" value="Business Administration Tampa BA GBA" data-institution="(i-tampa)" class="gba-ba" id="ba-gba"><label for="ba-gba">Business Administration - Gen (Tampa) (BA) (GBA) </label>
+                        <input type="checkbox" name="Business Administration SP BP GBA" value="Business Administration SP BP GBA" data-institution="(i-stpete)" class="gba-bp" id="bp-gba"><label for="bp-gba">Business Administration - Gen (SP) (BP) (GBA)</label>
+                        <input type="checkbox" name="Business Administration SM BM GBA" value="Business Administration SM BM GBA" data-institution="(i-sarasota)" class="gba-bm" id="bm-gba"><label for="gm-gba">Business Administration - Gen (SM) (BM) (GBA)</label>
+                        <input type="checkbox" name="Business Administration Other TT GBA" value="Business Administration Other TT GBA" data-institution="(i-other)" class="gba-tt" id="tt-gba"><label for="tt-gba">Business Administration - Gen (Other) (TT) (GBA)</label>
+                        
+                        <input type="checkbox" name="Chemical & Biomedical Eng Other EN ECH" value="Chemical & Biomedical Eng Other EN ECH" data-institution="(i-other)" class="ech-en" id="en-ech"><label for="en-ech">Chemical & Biomedical Eng (Other) (EN) (ECH)</label>
+                        
+                        <input type="checkbox" name="Chemistry Tampa AS CHM" value="Chemistry Tampa AS CHM" data-institution="(i-tampa)" class="chm-as" id="as-chm"><label for="as-chm">Chemistry (Tampa) (AS) (CHM)</label>
+                        <input type="checkbox" name="Chemistry SP AP CHM" value="Chemistry SP AP CHM" data-institution="(i-stpette)" class="chm-ap" id="ap-chm"><label for="ap-chm">Chemistry (SP) (AP) (CHM)</label>
+                        <input type="checkbox" name="Chemistry SM AM CHM" value="Chemistry SM AM CHM" data-institution="(i-sarasota)" class="chm-am" id="am-chm"><label for="am-chm">Chemistry (SM) (AM) (CHM)</label>
+                        
+                        <input type="checkbox" name="Child & Family Studies Other BC CFS" value="Child & Family Studies Other BC CFS"  data-institution="(i-other)" class="cfs-bc" id="bc-cfs"><label for="bc-cfs">Child and Family Studies (Other) (BC) (CFS)</label>
+                        <input type="checkbox" name="Child & Family Studies Other FM CFS" value="Child & Family Studies Other FM CFS"  data-institution="(i-other)" class="cfm-fm" id="cfm-fm"><label for="D24d">Child and Family Studies (Other) (FM) (CFS)</label>
+                        
+                        <input type="checkbox" name="Childhood Ed & Literacy Stdies Tampa ED EDR" value="Childhood Ed & Literacy Stdies Tampa ED EDR"data-institution="(i-tampa)" class="edr-ed" id="ed-edr"><label for="ed-edr">Childhood Ed & Literacy Stdies (Tampa) (ED) (EDR)</label>
+                        <input type="checkbox" name="Childhood Ed & Literacy Stdies SP EP EDR" value="Childhood Ed & Literacy Stdies SP EP EDR" data-institution="(i-stpete)" class="edr-ep" id="ep-edr"><label for="ep-edr">Childhood Ed & Literacy Stdies (SP) (EP) (EDR)</label>
+                        <input type="checkbox" name="Childhood Ed & Literacy Stdies SM EM EDR" value="Childhood Ed & Literacy Stdies SM EM EDR" data-institution="(i-sarasota)" class="i-edr-em" id="em-edr"><label for="em-edr">Childhood Ed & Literacy Stdies (SM) (EM) (EDR)</label>
+                        <input type="checkbox" name="Childhood Ed & Literacy Stdies Other HT EDR" value="Childhood Ed & Literacy Stdies Other HT EDR"data-institution="(i-other)" class="edr-ht" id="ht-edr"><label for="edr-ht">Childhood Ed & Literacy Stdies (Other) (HT) (EDR)</label>
+                        
+                        <input type="checkbox" name="Civil & Environmental Eng Other EN EGX" value="Civil & Environmental Eng Other EN EGX" data-institution="(i-other)" class="egx-en" id="en-egx"><label for="en-egx">Civil & Environmental Eng (Other (EN) (EGX)</label>
+                        
+                        <input type="checkbox" name="Classics (Greek and Latin) Tampa AS CLA" value="Classics (Greek and Latin) Tampa AS CLA" data-institution="(i-tampa)" class="cla-as" id="cla-as"><label for="cla-as">Classics (Greek and Latin) (Tampa) (AS) (CLA)</label>
+                        
+                        <input type="checkbox" name="Co-op Education Tampa US COE" value="Co-op Education Tampa US COE" data-institution="(i-tampa)" class="coe-us" id="us-coe"><label for="us-coe">Co-op Education (Tampa) (US) (COE)</label>
+                        <input type="checkbox" name="Co-op Education SP EP COE" value="Co-op Education SP EP COE" data-institution="(i-stpete)" class="coe-ep" id="coe-ep"><label for="coe-ep">Co-op Education (SP) (EP) (COE)</label>
+                        
+                        <input type="checkbox" name="Communication Other AT SPE" value="Communication Other AT SPE" data-institution="(i-other)" class="spe-at" id="at-spe"><label for="at-spe">Communication (Other) (AT) (SPE)</label>
+                        <input type="checkbox" name="Communication SM AM SPE" value="Communication SM AM SPE" data-institution="(i-sarasota)" class="spe-am" id="am-spe"><label for="am-spe">Communication (Tampa) (AM) (SPE)</label>
+                        <input type="checkbox" name="Communication SP AP SPE" value="Communication SP AP SPE" data-institution="(i-stpete)" class="spe-ap" id="ap-spe"><label for="ap-spe">Communication (SP) (AP) (SPE)</label>
+                        <input type="checkbox" name="Communication Tampa AS SPE" value="Communication Tampa AS SPE" data-institution="(i-tampa)" class="spe-as" id="as-spe"><label for="as-spe">Communication (Tampa) (AS) (SPE)</label>
+                        <input type="checkbox" name="Communication SP EP SPE" value="Communication SP EP SPE" data-institution="(i-stpete)" class="spe-ep" id="ep-spe"><label for="ep-spe">Communication (SP) (EP) (SPE)</label>
+
+
+                        <input type="checkbox" name="Communication Sciences & Disorders SP AM CSD" value="Communication Sciences & Disorders SP AM CSD" data-institution="(i-stpete)" class="csd-am" id="am-csd"><label for="am-csd">Communication Sciences & Disorders (SP) (AM) (CSD)</label>
+                        <input type="checkbox" name="Communication Sciences & Disorders SM AM CSD" value="Communication Sciences & Disorders SM AM CSD" data-institution="(i-sarasota)" class="csd-am" id="am-csd"><label for="am-csd">Communication Sciences & Disorders (SM) (AM) (CSD)</label>
+                        <input type="checkbox" name="Communication Sciences & Disorders Other BC CSD" value="Communication Sciences & Disorders Other BC CSD" data-institution="(i-other)" class="csd-bc" id="bc-csd"><label for="bc-csd">Communication Sciences & Disorders (Other) (BC) (CSD)</label>
+                        <input type="checkbox" name="Communication Sciences & Disorders Other EP CSD" value="Communication Sciences & Disorders Other EP CSD" data-institution="(i-other)" class="csd-ep" id="ed-csd"><label for="ed-csd">Communication Sciences & Disorders (Other) (EP) (CSD)</label>
+                        
+                        <input type="checkbox" name="Community and Family Health Other BC CFH" value="Community and Family Health Other BC CFH" data-institution="(i-other)" class="cfh-bc" id="bc-cfh"><label for="bc-cfh">Community and Family Health (Other) (BC) (CFH)</label>
+                        <input type="checkbox" name="Community and Family Health Other FM CFH" value="Community and Family Health Other FM CFH" data-institution="(i-other)" class="cfh-fm" id="fm-cfh"><label for="fm-cfh">Community and Family Health (Other) (FM) (CFH)</label>
+                        <input type="checkbox" name="Community and Family Health Other PH CFH" value="Community and Family Health Other PH CFH" data-institution="(i-other)" class="cfh-ph" id="ph-cfh"><label for="ph-cfh">Community and Family Health (Other) (PH) (CFH)</label>
+
+                        
+                        <input type="checkbox" name="Community Experiential Learning Tamap AS CEL" value="Community Experiential Learning Tampa AS CEL" ddata-institution="(i-tampa)" class="cel-as" id="as-cel"><label for="as-cel">Community Experiential Learning (Tampa) (AS) (CEL)</label>
+                        
+                        <input type="checkbox" name="Counselor Education Tampa ED EDG" value="Counselor Education Tampa ED EDG" data-institution="(i-tampa)" class="edg-ed" id="ed-edg"><label for="ed-edg">Counselor Education (Tampa) (ED) (EDG)</label>
+                        <input type="checkbox" name="Counselor Education SP EP EDG" value="Counselor Education SP EP EDG" data-institution="(i-stpete)" class="edg-ep" id="ep-edg"><label for="ep-edg">Counselor Education (SP) (EP) (EDG)</label>
+                        <input type="checkbox" name="Counselor Education Other HT EDG" value="Counselor Education Other HT EDG" data-institution="(i-other)" class="edg-ht" id="edg-ht"><label for="edg-ht">Counselor Education (Other) (HT) (EDG)</label>
+                        
+                        <input type="checkbox" name="Criminology SP AM CJP" value="Criminology SP AM CJP" data-institution="(i-sarastoa)"  class="cjp-am" id="am-cjp"><label for="am-cjp">Criminology (SM) (AM) (CJP)</label>
+                        <input type="checkbox" name="Criminology SP AP CJP" value="Criminology SP AP CJP" data-institution="(i-stpete)"  class="cjp-ap" id="ap-cjp"><label for="ap-cjp">Criminology (SP) (AP) (CJP)</label>
+                        <input type="checkbox" name="Criminology Other BC CJP" value="Criminology Other BC CJP" data-institution="(i-other)" class="cjp-bc" id="bc-cjp"><label for="bc-cjp">Criminology (Other) (BC) (CJP)</label>
+                        <input type="checkbox" name="Criminology Other HT CJP" value="Criminology Other HT CJP" data-institution="(i-other)" class="cjp-ht" id="ht-cjp"><label for="ht-cjp">Criminology (Other) (HT) (CJP)</label>
+                        
+                        <input type="checkbox" name="Curriculum Tampa ED EDC" value="Curriculum Tampa ED EDC" data-institution="(i-tampa)" class="i-tampa"  id="D35a"><label for="D35a">Curriculum (Tampa)</label>
+                        <input type="checkbox" name="Curriculum SP" data-code="(EDC)" class="i-stpete"  id="D35b"><label for="D35b">Curriculum (SP)</label>
+                        <input type="checkbox" name="Curriculum Other" data-code="(EDC)" class="i-other"  id="D35d"><label for="D35d">Curriculum (Other)</label>
+                        
+                        <input type="checkbox" name="Dance Other" data-code="(DAN)" class="i-other" id="D36d"><label for="D36d">Dance (Other)</label>
+                        
+                        <input type="checkbox" name="Dean's Office Tampa" data-code="(DEA)" class="i-tampa" id="D37a"><label for="D37a">Dean's Office (Tampa)</label>
+                        <input type="checkbox" name="Dean's Office Other" data-code="(DEA)" class="i-other" id="D37d"><label for="D37d">Dean's Office (Other)</label>
+                        
+                        <input type="checkbox" name="Early Childhood Education Tampa" data-code="(EDU)" class="i-tampa" id="D38a"><label for="D38a">Early Childhood Education (Tampa)</label>
+                        <input type="checkbox" name="Early Childhood Education SM" data-code="(EDU)" class="i-sarasota" id="D38c"><label for="D38c">Early Childhood Education (SM)</label>
+                        <input type="checkbox" name="Early Childhood Education Other" data-code="(EDU)" class="i-other" id="D38d"><label for="D38d">Early Childhood Education (Other)</label>
+                        
+                        <input type="checkbox" name="Economics Tampa" data-code="(ECN)" class="i-tampa" id="D39a"><label for="D39a">Economics (Tampa)</label>
+                        <input type="checkbox" name="Economics SP" data-code="(ECN)" class="i-stpete"  id="D39b"><label for="D39b">Economics (SP)</label>
+                        <input type="checkbox" name="Economics SM" data-code="(ECN)" class="i-sarasota" id="D39c"><label for="D39c">Economics (SM)</label>
+                        <input type="checkbox" name="Economics Other" data-code="(ECN)" class="i-other" id="D39d"><label for="D39d">Economics (Other)</label>
+                        
+                        <input type="checkbox" name="Education - General SP" data-code="(EDZ)"  class="i-stpete" id="D40b"><label for="D40b">Education - General (SP)</label>
+                        
+                        <input type="checkbox" name="Educational Leadership Tampa" data-code="(ELS)" class="i-tampa" id="D41a"><label for="D41a">Educational Leadership (Tampa)</label>
+                        <input type="checkbox" name="Educational Leadership SP" data-code="(ELS)" class="i-stpete" id="D41b"><label for="D41b">Educational Leadership (SP)</label>
+                        
+                        <input type="checkbox" name="Educational Psychology Tampa" data-code="(EEP)" class="i-tampa" id="D42a"><label for="D42a">Educational Psychology (Tampa)</label>
+                        
+                        <input type="checkbox" name="Electrical Engineering Other" data-code="(EGE)" class="i-other" id="D43d"><label for="D43d">Electrical Engineering (Other)</label>
+                        
+                        <input type="checkbox" name="Elementary Education Tampa" data-code="(EDE)" class="i-tampa" id="D44a"><label for="D44a">Elementary Education (Tampa)</label>
+                        <input type="checkbox" name="Elementary Education SP" data-code="(EDE)" class="i-stpete" id="D44b"><label for="D44b">Elementary Education (SP)</label>
+                        <input type="checkbox" name="Elementary Education SM" data-code="(EDE)" class="i-sarasota" id="D44c"><label for="D44c">Elementary Education (SM)</label>
+                        <input type="checkbox" name="Elementary Education Other" data-code="(EDE)" class="i-other" id="D44d"><label for="D44d">Elementary Education (Other)</label>
+                           
+                        <input type="checkbox" name="Engineering Computer Science Other" data-code="(ESB)" class="i-other" id="D45d"><label for="D45d">Engineering Computer Science (Other)</label>
+                        
+                        <input type="checkbox" name="English Tampa" data-code="(ENG)" class="i-tampa" id="D46a"><label for="D46a">English (Tampa)</label>
+                        <input type="checkbox" name="English SP" data-code="(ENG)" class="i-stpete" id="D46b"><label for="D46b">English (SP)</label>
+                        <input type="checkbox" name="English SM" data-code="(ENG)" class="i-sarasota"  id="D46c"><label for="D46c">English (SM)</label>
+                        <input type="checkbox" name="English Other" data-code="(ENG)" class="i-other" id="D46d"><label for="D46d">English (Other)</label>
+                        
+                        <input type="checkbox" name="English Ed & Speech Comm. Ed Tampa" data-code="(EDT)" class="i-tampa" id="D47a"><label for="D47a">English Ed & Speech Comm. Ed (Tampa)</label>
+                        <input type="checkbox" name="English Ed & Speech Comm. Ed SP" data-code="(EDT)" class="i-stpete" id="D47b"><label for="D47b">English Ed & Speech Comm. Ed (SP)</label>
+                        
+                        <input type="checkbox" name="Entrepreneurship SP" data-code="(ENP)" class="i-stpete" id="D48b"><label for="D48b">Entrepreneurship (SP)</label>
+                        
+                        <input type="checkbox" name="Environ. & Occupational Health Other" data-code="(EOH)" class="i-other" id="D49d"><label for="D49d">Environ. & Occupational Health (Other)</label>
+                        
+                        <input type="checkbox" name="Environmental Science & Policy Program Tampa" data-code="(ESP)" class="i-tampa" id="D50a"><label for="D50a">Environmental Science & Policy Program (Tampa)</label>
+                        <input type="checkbox" name="Environmental Science & Policy Program SP" data-code="(ESP)" class="i-stpete" id="D50b"><label for="D50b">Environmental Science & Policy Program (SP)</label>
+                        <input type="checkbox" name="Environmental Science & Policy Program SM" data-code="(ESP)" class="i-sarasota" id="D50c"><label for="D50c">Environmental Science & Policy Program (SM)</label>
+                        
+                        <input type="checkbox" name="Epidemiology and Biostatistics OTHER" data-code="(EPB)" class="i-other"  id="D51d"><label for="D51d">Epidemiology and Biostatistics (Other) </label>
+                        
+                        <input type="checkbox" name="Exceptional Child Education Tampa" data-code="(EDS)" class="i-tampa" id="D52a"><label for="D52a">Exceptional Child Education (Tampa)</label>
+                        <input type="checkbox" name="Exceptional Child Education SP" data-code="(EDS)" class="i-stpete" id="D52b"><label for="D52b">Exceptional Child Education (SP)</label>
+                        <input type="checkbox" name="Exceptional Child Education SM" data-code="(EDS)" class="i-sarasota" id="D52c"><label for="D52c">Exceptional Child Education (SM)</label>
+                        <input type="checkbox" name="Exceptional Child Education Other" data-code="(EDS)" class="i-other" id="D52d"><label for="D52d">Exceptional Child Education (Other)</label>
+                        
+                        <input type="checkbox" name="Finance Tampa" data-code="(FIN)" class="i-tampa" id="D53a"><label for="D53a">Finance (Tampa)</label>
+                        <input type="checkbox" name="Finance SP" data-code="(FIN)" class="i-stpete" id="D53b"><label for="D53b">Finance (SP)</label>
+                        <input type="checkbox" name="Finance SM" data-code="(FIN)" class="i-sarasota"  id="D53c"><label for="D53c">Finance (SM)</label>
+                        <input type="checkbox" name="Finance Other" data-code="(FIN)" class="i-other"  id="D53d"><label for="D53d">Finance (Other)</label>
+                        
+                        <input type="checkbox" name="FMHI Tampa" data-code="(FMH)" class="i-tampa" id="D54a"><label for="D54a">FMHI (Tampa)</label>
+                        <input type="checkbox" name="FMHI Other" data-code="(FMH)" class="i-other" id="D54d"><label for="D54d">FMHI (Other)</label>
+                        
+                        <input type="checkbox" name="Foreign Language Education Tampa" data-code="(EDX)" class="i-tampa" id="D55a"><label for="D55a">Foreign Language Education (Tampa)</label>
+                        <input type="checkbox" name="Foreign Language Education SP" data-code="(EDX)" class="i-stpete" id="D55b"><label for="D55b">Foreign Language Education (SP)</label>
+                        <input type="checkbox" name="Foreign Language Education SM" data-code="(EDX)" class="i-sarasota" id="D55c"><label for="D55c">Foreign Language Education (SM)</label>
+                        <input type="checkbox" name="Foreign Language Education Other" data-code="(EDX)" class="i-other" id="D55d"><label for="D55d">Foreign Language Education (Other)</label>
+                        
+                        <input type="checkbox" name="Foundations Tampa" data-code="(EDF)" class="i-tampa" id="D56a"><label for="D56a">Foundations (Tampa)</label>
+                        <input type="checkbox" name="Foundations SP" data-code="(EDF)" class="i-stpete" id="D56b"><label for="D56b">Foundations (SP)</label>
+                        <input type="checkbox" name="Foundations SM" data-code="(EDF)" class="i-sarasota" id="D56c"><label for="D56c">Foundations (SM)</label>
+                        <input type="checkbox" name="Foundations Other" data-code="(EDF)" class="i-other" id="D56d"><label for="D56d">Foundations (Other)</label>
+                        
+                        <input type="checkbox" name="Geography Tampa" data-code="(GPY)" class="i-tampa" id="D57a"><label for="D57a">Geography (Tampa)</label>
+                        <input type="checkbox" name="Geography SP" data-code="(GPY)" class="i-stpete" id="D57b"><label for="D57b">Geography (SP)</label>
+                        
+                        <input type="checkbox" name="Geology Tampa" data-code="(GLY)" class="i-tampa" id="D58a"><label for="D58a">Geology (Tampa)</label>
+                        <input type="checkbox" name="Geology SP" data-code="(GLY)" class="i-stpete" id="D58b"><label for="D58b">Geology (SP)</label>
+                        
+                        <input type="checkbox" name="Geosciences, School of Tampa" data-code="(SGS)" class="i-tampa" id="D59a"><label for="D59a">Geosciences, School of (Tampa)</label>
+                        
+                        <input type="checkbox" name="Global Health Other" data-code="(GLO)" class="i-other" id="D60d"><label for="D60d">Global Health (Other)</label>
+                        
+                        <input type="checkbox" name="Government & Intl Affairs Tampa" data-code="(GIA)" class="i-tampa" id="D61a"><label for="D61a">Government & Intl Affairs (Tampa)</label>
+                        
+                        <input type="checkbox" name="Graduate School Department Other" data-code="(GRS)" class="i-other" id="D62d"><label for="D62d">Graduate School Department (Other)</label>
+                        
+                        <input type="checkbox" name="Health Policy and Management Other" data-code="(HPM)" class="i-other" id="D63d"><label for="D63d">Health Policy and Management (Other)</label>
+                        
+                        <input type="checkbox" name="Higher Ed/Community College Ed Tampa" data-code="(EDH)" class="i-tampa" id="D64a"><label for="D64a">Higher Ed/Community College Ed (Tampa)</label>
+                        
+                        <input type="checkbox" name="History Tampa" data-code="(HTY)" class="i-tampa"  id="D65a"><label for="D65a">History (Tampa)</label>
+                        <input type="checkbox" name="History SP" data-code="(HTY)" class="i-stpete"  id="D65b"><label for="D65b">History (SP)</label>
+                        <input type="checkbox" name="History SM" data-code="(HTY)" class="i-sarasota"  id="D65c"><label for="D65c">History (SM)</label>
+                        
+                        <input type="checkbox" name="Honors Program SP" data-code="(HON)" class="i-stpete" id="D66b"><label for="D66b">Honors Program (SP)</label>
+                        <input type="checkbox" name="Honors Program SM" data-code="(HON)" class="i-sarasota" id="D66c"><label for="D66c">Honors Program (SM)</label>
+                        <input type="checkbox" name="Honors Program Other" data-code="(HON)" class="i-other" id="D66d"><label for="D66d">Honors Program (Other)</label>
+                        
+                        <input type="checkbox" name="Hotel & Restaurant Management Tampa" data-code="(HRM)"  class="i-tampa" id="D67a"><label for="D67a">Hotel & Restaurant Management (Tampa)</label>
+                        <input type="checkbox" name="Hotel & Restaurant Management SM" data-code="(HRM)"  class="i-sarasota" id="D67c"><label for="D67c">Hotel & Restaurant Management (SM)</label>
+                        
+                        <input type="checkbox" name="Humanities & Cultural Studies Tampa" data-code="(HCS)" class="i-tampa" id="D68a"><label for="D68a">Humanities & Cultural Studies (Tampa)</label>
+                        <input type="checkbox" name="Humanities & Cultural Studies SM" data-code="(HCS)" class="i-sarasota" id="D68c"><label for="D68c">Humanities & Cultural Studies (SM)</label>
+                        
+                        <input type="checkbox" name="Humanities Tampa" data-code="(HUM)" class="i-tampa" id="D69a"><label for="D69a">Humanities (Tampa)</label>
+                        <input type="checkbox" name="Humanities SP" data-code="(HUM)" class="i-stpete" id="D69b"><label for="D69b">Humanities (SP)</label>
+                        <input type="checkbox" name="Humanities SM" data-code="(HUM)" class="i-sarasota" id="D69c"><label for="D69c">Humanities (SM)</label>
+                        
+                        <input type="checkbox" name="Industrial Systems Other" data-code="(EGS)" class="i-other" id="D70d"><label for="D70d">Industrial Systems (Other)</label>
+                        
+                        <input type="checkbox" name="Information Sys & Decision Sci Tampa" data-code="(QMB)" class="i-tampa" id="D71a"><label for="D71a">Information Sys & Decision Sci (Tampa)</label>
+                        <input type="checkbox" name="Information Sys & Decision Sci SP" data-code="(QMB)" class="i-stpete" id="D71b"><label for="D71b">Information Sys & Decision Sci (SP)</label>
+                        <input type="checkbox" name="Information Sys & Decision Sci SM" data-code="(QMB)" class="i-sarasota" id="D71c"><label for="D71c">Information Sys & Decision Sci (SM)</label>
+                        <input type="checkbox" name="Information Sys & Decision Sci Other" data-code="(QMB)" class="i-other" id="D71d"><label for="D71d">Information Sys & Decision Sci (Other)</label>
+                        
+                        <input type="checkbox" name="Information Technology Tampa" data-code="(EIT)" class="i-tampa" id="D72a"><label for="D72a">Information Technology (Tampa)</label>
+                        <input type="checkbox" name="Information Technology SM" data-code="(EIT)" class="i-sarasota" id="D72b"><label for="D72b">Information Technology (SM)</label>
+                        <input type="checkbox" name="Information Technology Other" data-code="(EIT)" class="i-other" id="D72c"><label for="D72c">Information Technology (Other)</label>
+                        
+                        <input type="checkbox" name="Instructional Technology Tampa" data-code="(EDK)" class="i-tampa" id="D73a"><label for="D73a">Instructional Technology (Tampa)</label>
+                        <input type="checkbox" name="Instructional Technology SP" data-code="(EDK)" class="i-stpete"  id="D73b"><label for="D73b">Instructional Technology (SP)</label>
+                        <input type="checkbox" name="Instructional Technology SM" data-code="(EDK)" class="i-sarasota" id="D73c"><label for="D73c">Instructional Technology (SM)</label>
+                        <input type="checkbox" name="Instructional Technology Other" data-code="(EDK)" class="i-other" id="D73d"><label for="D73d">Instructional Technology (Other)</label>
+                        
+                        <input type="checkbox" name="Interdisciplinary Arts & Scien Tampa"  class="i-tampa" data-code="(IAS)" id="D74a"><label for="D74a">Interdisciplinary Arts & Scien (Tampa)</label>
+                        
+                        <input type="checkbox" name="Interdisciplinary Social Sci Tampa" data-code="(ISS)" class="i-tampa" id="D75a"><label for="D75a">Interdisciplinary Social Sci (Tampa)</label>
+                        <input type="checkbox" name="Interdisciplinary Social Sci SP" data-code="(ISS)" class="i-stpete" id="D75b"><label for="D75b">Interdisciplinary Social Sci (SP)</label>
+                        <input type="checkbox" name="Interdisciplinary Social Sci SM" data-code="(ISS)" class="i-sarasota" id="D75c"><label for="D75c">Interdisciplinary Social Sci (SM)</label>
+                        <input type="checkbox" name="Interdisciplinary Social Sci Other" data-code="(ISS)" class="i-other" id="D75d"><label for="D75d">Interdisciplinary Social Sci (Other)</label>
+                        
+                        <input type="checkbox" name="Interdisciplinary Studies Other" data-code="(IDS)"  class="i-other" id="D76d"><label for="D76d">Interdisciplinary Studies (Other) </label>
+                        
+                        <input type="checkbox" name="International Studies Tampa" data-code="(INT)" class="i-tampa" id="D77a"><label for="D77a">International Studies (Tampa)</label>
+                        <input type="checkbox" name="International Studies SM" data-code="(INT)" class="i-sarasota" id="D77c"><label for="D77c">International Studies (SM)</label>
+                        <input type="checkbox" name="International Studies Other" data-code="(INT)" class="i-other" id="D77d"><label for="D77d">International Studies (Other)</label>
+                        
+                        <input type="checkbox" name="Latin Am Studies/Caribbean Ctr Tampa" data-code="(LAS)" class="i-tampa" id="D78a"><label for="D78a">Latin Am Studies/Caribbean Ctr (Tampa) </label>
+                        
+                        <input type="checkbox" name="Leadership Studies Tampa" data-code="(LDR)" class="i-tampa" id="D79a"><label for="D79a">Leadership Studies (Tampa)</label>
+                        <input type="checkbox" name="Leadership Studies SM" data-code="(LDR)" class="i-stpete" id="D79b"><label for="D79b">Leadership Studies (SP)</label>
+                        <input type="checkbox" name="Leadership Studies Other" data-code="(LDR)" class="i-sarasota" id="D79c"><label for="D79c">Leadership Studies (SM)</label>
+                        
+                        <input type="checkbox" name="Library and Information Sci. Tampa" data-code="(LIS)" class="i-tampa" id="D80a"><label for="D80a">Library and Information Sci. (Tampa)</label>
+                        <input type="checkbox" name="Library and Information Sci. SP" data-code="(LIS)" class="i-stpete" id="D80b"><label for="D80b">Library and Information Sci. (SP)</label>
+                        
+                        <input type="checkbox" name="Management and Organization Tampa" data-code="(MAN)" class="i-tampa" id="D81a"><label for="D81a">Management and Organization (Tampa)</label>
+                        <input type="checkbox" name="Management and Organization SP" data-code="(MAN)" class="i-stpete"  id="D81b"><label for="D81b">Management and Organization (SP)</label>
+                        <input type="checkbox" name="Management and Organization SM" data-code="(MAN)" class="i-sarasota"  id="D81c"><label for="D81c">Management and Organization (SM)</label>
+                        <input type="checkbox" name="Management and Organization Other" data-code="(MAN)" class="i-other"  id="D81d"><label for="D81d">Management and Organization (Other)</label>
+                        
+                        <input type="checkbox" name="Marine Science SM" data-code="(MSC)" class="i-sarasota" id="D82c"><label for="D82c">Marine Science (SM)</label>
+                        <input type="checkbox" name="Marine Science Other" data-code="(MSC)" class="i-other" id="D82d"><label for="D82d">Marine Science (Other)</label>
+                        
+                        <input type="checkbox" name="Marketing Tampa" data-code="(MKT)" class="i-tampa" id="D83a"><label for="D83a">Marketing (Tampa)</label>
+                        <input type="checkbox" name="Marketing SP" data-code="(MKT)" class="i-stpete"  id="D83b"><label for="D83b">Marketing (SP)</label>
+                        <input type="checkbox" name="Marketing SM" data-code="(MKT)" class="i-sarasota"  id="D83c"><label for="D83c">Marketing (SM)</label>
+                        <input type="checkbox" name="Marketing Other" data-code="(MKT)" class="i-other"  id="D83d"><label for="D83d">Marketing (Other)</label>
+                        
+                        <input type="checkbox" name="Mass Communication Tampa" data-code="(COM)" class="i-tampa" id="D84a"><label for="D84a">Mass Communication (Tampa)</label>
+                        <input type="checkbox" name="Mass Communication SP" data-code="(COM)" class="C4b" id="D84b"><label for="D84b">Mass Communication (SP)</label>
+                        <input type="checkbox" name="Mass Communication SM" data-code="(COM)" class="i-sarasota" id="D84c"><label for="D84c">Mass Communication (SM)</label>
+                        
+                        <input type="checkbox" name="Mathematics and Statistics Tampa" data-code="(MTH)" class="i-tampa"  id="D85a"><label for="D85a">Mathematics and Statistics (Tampa)</label>
+                        <input type="checkbox" name="Mathematics and Statistics SP" data-code="(MTH)" class="i-stpete"  id="D85b"><label for="D85b">Mathematics and Statistics (SP)</label>
+                        <input type="checkbox" name="Mathematics and Statistics SM" data-code="(MTH)" class="i-sarasota"  id="D85c"><label for="D85c">Mathematics and Statistics (SM)</label>
+                        <input type="checkbox" name="Mathematics and Statistics Other" data-code="(MTH)" class="i-other"  id="D85d"><label for="D85d">Mathematics and Statistics (Other)</label>
+                        
+                        <input type="checkbox" name="Mathematics Education Tampa" data-code="(EDO)" class="i-tampa" id="D86a"><label for="D86a">Mathematics Education (Tampa)</label>
+                        <input type="checkbox" name="Mathematics Education SP" data-code="(EDO)" class="i-stpete" id="D86b"><label for="D86b">Mathematics Education (SP)</label>
+                        <input type="checkbox" name="Mathematics Education SM" data-code="(EDO)" class="i-sarasota" id="D86c"><label for="D86c">Mathematics Education (SM)</label>
+                        
+                        <input type="checkbox" name="Measurement-Research Tampa" data-code="(EDQ)" class="i-tampa" id="D87a"><label for="D87a">Measurement-Research (Tampa)</label>
+                        <input type="checkbox" name="Measurement-Research SP" data-code="(EDQ)" class="i-stpete" id="D87b"><label for="D87b">Measurement-Research (SP)</label>
+                        <input type="checkbox" name="Measurement-Research SM" data-code="(EDQ)" class="i-sarasota" id="D87c"><label for="D87c">Measurement-Research (SM)</label>
+                        
+                        <input type="checkbox" name="Mechanical Engineering Other" data-code="(EGR)" class="i-other" id="D88d"><label for="D88d">Mechanical Engineering (Other)</label>
+                        
+                        <input type="checkbox" name="Medical Sciences Other" data-code="(MED)" class="i-other" id="D89d"><label for="D89d">Medical Sciences (Other)</label>
+                        
+                        <input type="checkbox" name="Mental Health Law & Policy Other" data-code="(MHL)" class="i-other" id="D90d"><label for="D90d">Mental Health Law & Policy (Other)</label>
+                        
+                        <input type="checkbox" name="Music Tampa" data-code="(MUS)" class="i-tampa" id="D91a"><label for="D91a">Music (Tampa)</label>
+                        <input type="checkbox" name="Music SP" data-code="(MUS)" class="i-stpete" id="D91b"><label for="D91b">Music (SP)</label>
+                        <input type="checkbox" name="Music SM" data-code="(MUS)" class="i-sarasota" id="D91c"><label for="D91c">Music (SM)</label>
+                        <input type="checkbox" name="Music Other" data-code="(MUS)" class="i-other"  id="D91d"><label for="D91d">Music (Other)</label>
+                        
+                        <input type="checkbox" name="Music Education Tampa" data-code="(EDM)" class="i-tampa"  id="D92a"><label for="D92a">Music Education (Tampa)</label>
+                        
+                        <input type="checkbox" name="Naval (ROTC) Tampa" data-code="(NVY)" class="i-tampa" id="D93a"><label for="D93a">Naval (ROTC) (Tampa)</label>
+                       
+                        <input type="checkbox" name="Nursing (NUR) Other" class="i-other" id="D94d"><label for="D94d">Nursing (Other)</label>
+                        
+                        <input type="checkbox" name="Philosophy Tampa" data-code="(PHI)" class="i-tampa" id="D95a"><label for="D95a">Philosophy (Tampa)</label>
+                        <input type="checkbox" name="Philosophy SP" data-code="(PHI)" class="i-stpete" id="D95b"><label for="D95b">Philosophy (SP)</label>
+                        <input type="checkbox" name="Philosophy SM" data-code="(PHI)" class="i-sarasota" id="D95c"><label for="D95c">Philosophy (SM)</label>
+                        
+                        <input type="checkbox" name="Physical Education (Elective) (PEB) SM " data-code="(PEB)"  class="i-sarasota" id="D96c"><label for="D96c">Physical Education (Elective) (PEB) (SM)</label>
+                        
+                        <input type="checkbox" name="Physical Education (Elective) (PEB) Tampa " data-code="(EDJ)"  class="i-tampa" id="D97a"><label for="D97a">Physical Education (Elective) (EDJ) (Tampa)</label>
+                        <input type="checkbox" name="Physical Education (Elective) (PEB) SM " data-code="(EDJ)"  class="i-sarasota" id="D97c"><label for="D97c">Physical Education (Elective) (EDJ) (SM)</label>
+                        
+                        <input type="checkbox" name="Physical Education for Teacher Tampa" data-code="(EDP)" class="i-tampa"  id="D98a"><label for="D98a">Physical Education for Teacher (Tampa) </label>
+                        <input type="checkbox" name="Physical Education for Teacher SM" data-code="(EDP)" class="i-sarasota"  id="D98c"><label for="D98c">Physical Education for Teacher (SM) </label>
+                        <input type="checkbox" name="Physical Education for Teacher Other" data-code="(EDP)" class="i-other"   id="D98d"><label for="D98d">Physical Education for Teacher (Other) </label>
+                        
+                        <input type="checkbox" name="Physical Therapy Other" data-code="(PHT)" class="i-other"  id="D99d"><label for="D99d">Physical Therapy (Other)</label>
+                        
+                        <input type="checkbox" name="Physics Tampa" data-code="(PHY)" class="i-tampa" id="D100a"><label for="D100a">Physics (Tampa)</label>
+                        <input type="checkbox" name="Physics SP" data-code="(PHY)" class="i-stpete" id="D100b"><label for="D100b">Physics (SP)</label>
+                        <input type="checkbox" name="Physics SM" data-code="(PHY)" class="i-sarasota"  id="D100c"><label for="D100c">Physics (SM)</label>
+                        
+                        <input type="checkbox" name="Political Science Tampa" data-code="(POL)" class="i-tampa" id="D101a"><label for="D101a">Political Science (Tampa)</label>
+                        <input type="checkbox" name="Political Science SP" data-code="(POL)" class="i-stpete" id="D101b"><label for="D101b">Political Science (SP)</label>
+                        <input type="checkbox" name="Political Science SM" data-code="(POL)" class="i-sarasota" id="D101c"><label for="D101c">Political Science (SM)</label>
+                        
+                        <input type="checkbox" name="Psychology Tampa" data-code="(PSY)" class="i-tampa" id="D102a"><label for="D102a">Psychology (Tampa)</label>
+                        <input type="checkbox" name="Psychology SP" data-code="(PSY)" class="i-stpete" id="D102b"><label for="D102b">Psychology (SP)</label>
+                        <input type="checkbox" name="Psychology SM" data-code="(PSY)" class="i-sarasota" id="D102c"><label for="D102c">Psychology (SM)</label>
+                        <input type="checkbox" name="Psychology Other" data-code="(PSY)" class="i-other" id="D102d"><label for="D102d">Psychology (Other)</label>
+                        
+                        <input type="checkbox" name="Public Administration Tampa" data-code="(PAD)" class="i-tampa" id="D103a"><label for="D103a">Public Administration (Tampa)</label>
+                        <input type="checkbox" name="Public Administration SM" data-code="(PAD)" class="i-sarasota" id="D103c"><label for="D103c">Public Administration (SM)</label>
+                        
+                        <input type="checkbox" name="Public Health Other" data-code="(PHC)" class="i-other" id="D104d"><label for="D104d">Public Health (Other)</label>
+                        
+                        <input type="checkbox" name="Reading & Learning Strategies Tampa" data-code="(RLS)" class="i-tampa" id="D105a"><label for="D105a">Reading & Learning Strategies (Tampa)</label>
+                        <input type="checkbox" name="Reading & Learning Strategies SP" data-code="(RLS)" class="i-stpete" id="D105b"><label for="D105b">Reading & Learning Strategies (SP)</label>
+                        
+                        <input type="checkbox" name="Rehab & Mental Hlth Counseling SM" data-code="(REH)" class="i-sarasota"  id="D106c"><label for="D106c">Rehab & Mental Hlth Counseling (SM)</label>
+                        <input type="checkbox" name="Rehab & Mental Hlth Counseling Other" data-code="(REH)" class="i-other"  id="D106d"><label for="D106d">Rehab & Mental Hlth Counseling (Other)</label>
+                        
+                        <input type="checkbox" name="Religious Studies Tampa" data-code="(REL)" class="i-tampa" id="D107a"><label for="D107a">Religious Studies (Tampa)</label>
+                        <input type="checkbox" name="Religious Studies SP" data-code="(REL)" class="i-stpete" id="D107b"><label for="D107b">Religious Studies (SP)</label>
+                        <input type="checkbox" name="Religious Studies SM" data-code="(REL)" class="i-sarasota" id="D107c"><label for="D107c">Religious Studies (SM)</label>
+                        <input type="checkbox" name="Religious Studies Other" data-code="(REL)" class="i-other" id="D107d"><label for="D107d">Religious Studies (Other)</label>
+                        
+                        <input type="checkbox" name="School of Aging Studies SM" data-code="(GEY)" class="i-sarasota" id="D108c"><label for="D108c">School of Aging Studies (SM)</label>
+                        <input type="checkbox" name="School of Aging Studies Other" data-code="(GEY)" class="i-other" id="D108d"><label for="D108d">School of Aging Studies (Other)</label>
+                        
+                        <input type="checkbox" name="School of Information Tampa" data-code="(LIS)" class="i-tampa" id="D109a"><label for="D109a">School of Information (Tampa)</label>
+                        
+                        <input type="checkbox" name="School of Public Affairs Tampa" data-code="(SPF)" class="i-tampa" id="D110a"><label for="D110a">School of Public Affairs (Tampa)</label>
+                        
+                        <input type="checkbox" name="School Psychology Tampa" data-code="(EPS)" class="i-tampa" id="D111a"><label for="D111a">School Psychology (Tampa)</label>
+                        
+                        <input type="checkbox" name="Science Education Tampa" data-code="(EDN)" class="i-tampa"  id="D112a"><label for="D112a">Science Education (Tampa)</label>
+                        <input type="checkbox" name="Science Education SM" data-code="(EDN)" class="i-sarasota"  id="D112c"><label for="D112c">Science Education (SM)</label>
+                        <input type="checkbox" name="Science Education Other" data-code="(EDN)" class="i-other"  id="D112d"><label for="D112d">Science Education (Other)</label>
+                        
+                        <input type="checkbox" name="Secondary Education, General Tampa" data-code="(EDI)" class="i-tampa" id="D113a"><label for="D113a">Secondary Education, General (Tampa)</label>
+                        <input type="checkbox" name="Secondary Education, General SP" data-code="(EDI)" class="i-stpete" id="D113b"><label for="D113b">Secondary Education, General (SP)</label>
+                        
+                        <input type="checkbox" name="Social Foundations Tampa" data-code="(ESF)" class="i-tampa" id="D114a"><label for="D114a">Social Foundations (Tampa)</label>
+                        
+                        <input type="checkbox" name="Social Science Education Tampa" data-code="(EDW)" class="i-tampa"  id="D115a"><label for="D115a">Social Science Education (Tampa)</label>
+                        <input type="checkbox" name="Social Science Education SM" data-code="(EDW)" class="i-stpete"  id="D115b"><label for="D115b">Social Science Education (SP)</label>
+                        
+                        <input type="checkbox" name="Social Work SP" data-code="(SOK)"  class="i-stpete" id="D116b"><label for="D116b">Social Work (SP)</label>
+                        <input type="checkbox" name="Social Work SM" data-code="(SOK)"  class="i-sarasota" id="D116c"><label for="D116c">Social Work (SM)</label>
+                        <input type="checkbox" name="Social Work Other" data-code="(SOK)"  class="i-other" id="D116d"><label for="D116d">Social Work (Other)</label>
+                        
+                        <input type="checkbox" name="Sociology Tampa" data-code="(SOC)" class="i-tampa"  id="D117a"><label for="D117a">Sociology (Tampa)</label>
+                        <input type="checkbox" name="Sociology SP" data-code="(SOC)" class="i-stpete" id="D117b"><label for="D117b">Sociology (SP)</label>
+                        <input type="checkbox" name="Sociology SM" data-code="(SOC)" class="i-sarasota"  id="D117c"><label for="D117c">Sociology (SM)</label>
+                        <input type="checkbox" name="Sociology Other" data-code="(SOC)" class="i-other" id="D117d"><label for="D117d">Sociology (Other)</label>
+                        
+                        <input type="checkbox" name="Student Affairs - General Tampa" data-code="(SAG)" class="i-tampa"  id="D118a"><label for="D118a">Student Affairs - General (Tampa) </label>
+                        
+                        <input type="checkbox" name="Student Leadership Tampa" data-code="(STL)" class="i-tampa" id="D119a"><label for="D119a">Student Leadership (Tampa)</label>
+                        <input type="checkbox" name="Student Leadership SP" data-code="(STL)" class="i-stpete" id="D119b"><label for="D119b">Student Leadership (SP)</label>
+                        <input type="checkbox" name="Student Leadership SM" data-code="(STL)" class="i-sarasota" id="D119c"><label for="D119c">Student Leadership (SM)</label>
+                        <input type="checkbox" name="Student Leadership Other" data-code="(STL)" class="i-other" id="D119d"><label for="D119d">Student Leadership (Other)</label>
+                        
+                        <input type="checkbox" name="Theater & Dance Tampa" data-code="(TAR)" class="i-tampa" id="D120a"><label for="D120a">Theater & Dance (Tampa)</label>
+                        <input type="checkbox" name="Theater & Dance SM" data-code="(TAR)" class="i-sarasota"  id="D120b"><label for="D120b">Theater & Dance (SM)</label>
+                        <input type="checkbox" name="Theater & Dance Other" data-code="(TAR)" class="i-other"  id="D120c"><label for="D120c">Theater & Dance (Other)</label>
+                        
+                        <input type="checkbox" name="Women's and Gender Studies Tampa" data-code="(WST)" class="i-tampa" id="D121a"><label for="D121a">Women's and Gender Studies (Tampa) </label>
+                        <input type="checkbox" name="Women's and Gender Studies SP" data-code="(WST)" class="i-stpete" id="D121b"><label for="D121b">Women's and Gender Studies (SP) </label>
+                        <input type="checkbox" name="Women's and Gender Studies SM" data-code="(WST)" class="i-sarasota"  id="D121c"><label for="D121c">Women's and Gender Studies (SM) </label>
+                        <input type="checkbox" name="Women's and Gender Studies Other" data-code="(WST)" class="i-other" id="D121d"><label for="D121d">Women's and Gender Studies (Other) </label>
+                        
+                        <input type="checkbox" name="World Languages Tampa" data-code="(WLE)" class="i-tampa" id="D122a"><label for="D122a">World Languages (Tampa)</label>
+                        <input type="checkbox" name="World Languages SP" data-code="(WLE)" class="i-stpete" id="D122b"><label for="D122b">World Languages (SP)</label>
+                        <input type="checkbox" name="World Languages SM" data-code="(WLE)" class="i-sarasota" id="D122c"><label for="D122c">World Languages (SM)</label>
+
+        </fieldset>
+      </form>
+    </section>
+    <section><header><h3>Section Four: Courses</h3></header>
+      <ul><li>TBD</li></ul>
+    </section>
+  </article>
+
+
+  <aside>
+    <header><h3>To Do List</h3></header>
+    <h4>Item One: Asses for Student Viewpoint</h4>
+    
+        <ul>
+            <li>Use as a baseline: http://www.registrar.usf.edu/ssearch/staff/staff.php</li>
+            <li>Difference Between Web, Distance Learning,Tele-course</li>
+            <li>Filter to Open, Active Status</li>
+            <li>Title?</li>
+        </ul>
+    <h4>List</h4> 
+    
+        <ul>
+            <li>Robert</li>
+            <li>Students in Survey who said they were willing to be contacted for follow-up feedback</li>
+            <li>Possible Others at the Library (Need to check with Casey)</li>
+        </ul>   
+  </aside>
+
+  <aside itemscope itemtype="http://schema.org/Code">
+      <header><h3>Project Development</h3></header>
+      <ul>
+        <li itemprop="workExample">Dr.Frechette, Code Development and Interface Design</li>
+        <li itemprop="contributor">Mr. Watson, Systems and Advisor for User Experience</li>
+        <li itemprop="contributor">Ms. Austin</li>
+      </ul>
+  </aside>
+  
+  <footer>
+    <h3>References</h3>
+    <ul>
+      <li><a href="http://www.registrar.usf.edu/ssearch/data/dept.php">Reference for Departments and Colleges</a></li>
+    </ul>
+  </footer>
+
+  
+  
+  
+  
+<script>
+// original code block developed by Dr. Casey Frechette follows
+
+jQuery("#institution-step input, #college-step input").click (function () {
+    var currentState = jQuery(this).is(':checked');
+    var currentID = jQuery(this).attr('id');
+    jQuery("#college-step input, #department-step input").each(function(index) {
+        if (jQuery(this).hasClass(currentID)) {
+            var displayState = currentState ? 'inline-block' : 'none';
+            jQuery(this).css({'display':displayState});
+            jQuery("label[for='"+jQuery(this).attr('id')+"']" ).css({'display':displayState});
+        }
+    });
+});
+
+// end code block developed by Dr. Casey Frechette
+</script>
+
+  </body>
+</html>
+          
+                     
