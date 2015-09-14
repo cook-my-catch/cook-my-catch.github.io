@@ -22,16 +22,18 @@
 </head>
 <body>
 <nav itemscope itemtype="http://schema.org/Code">
-    <header><h3>JQuery References</h3></header>
+    <header><h3>References</h3></header>
     <h4>For 14 September 2015 edits</h4>
     <ul>
         <li><a href="http://api.jquery.com/prop/">JQuery .prop() method</a></li>
         <li><a href="https://api.jquery.com/serializeArray/">JQuery .serializeArray() method</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/How_to_structure_an_HTML_form">HTML5 Output</a></li>
     </ul>
 </nav>
 
   <article itemscope itemtype="http://schema.org/CreativeWork">
     <header itemprop="mainEntityOfPage"><h1>Form One Baseline</h1></header>
+    <form>
     <h2>This Page Is Under Development</h2>
     <h3>Test Task One: Will the form still work if ids are assigned to the fieldset rather than the form?</h3>
     <h4>Testing shows that yes, all the scripting still works with ids assigned to fieldset rather than form</h4>
@@ -41,10 +43,11 @@
         <header><h3>Reset Checkboxes</h3></header>
         <label><input type="checkbox" id="checkAll"/>Reset (un-Check all)</label>
     </section>
-
     <section>
+
+
       <header><h3>Section One: Institutions</h3></header>
-      <form>
+      <!-- <form> -->
         <fieldset id="institution-step">
                 <legend>Which Institution Do You Wish to Attend?</legend>
                     
@@ -55,11 +58,11 @@
                         <li><input type="checkbox" name="Other" value="Other" id="i-other"><label for="i-other">Other</label></li>
                     </ul>
         </fieldset>
-        </form>
+        <!-- </form> -->
     </section>
     <section>
       <header><h3>Section Two: Colleges</h3></header>
-            <form >
+            <!-- <form > -->
                  <fieldset id="college-step">
                 <legend>Which College Do You Wish to Attend?</legend>
 
@@ -105,11 +108,11 @@
                     </ul>
 
            </fieldset>
-        </form>
+        <!-- </form> -->
     </section>
     <section>
       <header><h3>Section Three: Departments</h3></header>
-      <form>
+      <!-- <form> -->
         <!--note for department section, use three digit code. For college section use two digit code -->
       <fieldset id="department-step">
                 <legend>Which Department/Program Are You Interested In?</legend>
@@ -548,11 +551,12 @@
 
                     </ul>
         </fieldset>
-      </form>
+     <!-- </form> -->
     </section>
     <section><header><h3>Section Four: Courses</h3></header>
       <ul><li>TBD</li></ul>
     </section>
+</form>
   </article>
   <aside>
     <header><h4>For Investigation:</h4></header>
