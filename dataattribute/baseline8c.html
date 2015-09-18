@@ -39,6 +39,19 @@
     <header itemprop="mainEntityOfPage"><h1>Form One Baseline</h1></header>
     <div data-institution="i-tampa">Test one for data-type</div>
     <div data-institution="tampa">Test two for data-type</div>
+    <span id="results">Test Results<br /></span>
+    <p></p>
+    <div id="#USFdiv"></div>
+    <div id="#USFSPdiv"></div>
+    <div id="#USFSMdiv"></div>
+    <div id="#Otherdiv"></div>
+    <span id="#test"></span>
+    <div class="test"></div>
+    <div class="usf"></div>
+    <div class="usfsp"></div>
+    <div class="usfsm"></div>
+    <div class="other"></div>
+    <div></div>
     <form>
     <h2>This Page Is Under Development</h2>
     <section>
@@ -545,10 +558,7 @@
         </fieldset>
     </section>
     <section><header><h3>Section Four: Courses</h3></header>
-      <ul>
-      <li><span id="results">Test Results<br /></span></li>
-      <li><div></div></li>
-      <p></p>
+        <ul><li>TBD</li></ul>
     </section>
 </form>
   </article>
@@ -709,34 +719,54 @@ $( "#institution-step input[type=checkbox][name$='USF']" ).on( "click", countChe
 */
 //end test two
 //test three
+var countChecked = function() {
+  var n = $( "input:checked" ).length;
+  $( ".test" ).text( n + (n === 1 ? " is" : " are") + " Institutions checked!" );
+};
+countChecked();
+ 
+$( "input[type=checkbox]" ).on( "click", countChecked );
 
-var countUSFChecked = function() {
-  var n = $( "input:checked" ).length;
-  $( "div" ).text( n + (n === 1 ? " is" : " are") + "  USF checked!" );
+
+
+var countCheckedUSF = function() {
+  var nusf = $( "input[name='USF']:checked" ).length;
+  $( ".usf" ).text( nusf + (nusf === 1 ? " is" : " are") + "  USF checked!" );
 };
-countUSFChecked();
+countCheckedUSF();
  
-$( "#institution-step input[type=checkbox][name='USFSP']" ).on( "click", countUSFSPChecked );
-var countUSFSPChecked = function() {
-  var n = $( "input:checked" ).length;
-  $( "div" ).text( n + (n === 1 ? " is" : " are") + "  USFSP checked!" );
+$( "#institution-step input[type=checkbox][name='USF']" ).on( "click", countCheckedUSF );
+ 
+
+var countCheckedUSFSP = function() {
+  var nusfsp = $( "input[name='USFSP']:checked" ).length;
+  $( ".usfsp" ).text( nusfsp + (nusfsp === 1 ? " is" : " are") + "  USFSP checked!" );
 };
-countUSFSPChecked();
+countCheckedUSFSP();
  
-$( "#institution-step input[type=checkbox][name='USFSM']" ).on( "click", countUSFSMChecked );
-var countUSFSMChecked = function() {
-  var n = $( "input:checked" ).length;
-  $( "div" ).text( n + (n === 1 ? " is" : " are") + "  USFSM checked!" );
+$( "#institution-step input[type=checkbox][name='USFSP']" ).on( "click", countCheckedUSFSP );
+ 
+
+
+var countCheckedUSFSM = function() {
+  var nusfsm = $( "input[name='USFSM']:checked" ).length;
+  $( ".usfsm" ).text( nusfsm + (nusfsm === 1 ? " is" : " are") + "  USFSM checked!" );
 };
-countUSFSMChecked();
+countCheckedUSFSM();
  
-$( "#institution-step input[type=checkbox][name='Other']" ).on( "click", countOtherChecked );
-var countOtherChecked = function() {
-  var n = $( "input:checked" ).length;
-  $( "div" ).text( n + (n === 1 ? " is" : " are") + "  Other checked!" );
+$( "#institution-step input[type=checkbox][name='USFSM']" ).on( "click", countCheckedUSFSM );
+
+
+
+var countCheckedOther = function() {
+  var nother = $( "input[name='Other']:checked" ).length;
+  $( ".usfsm" ).text( nother + (nother === 1 ? " is" : " are") + "  Other checked!" );
 };
-countOtherChecked();
+countCheckedOther();
  
+$( "#institution-step input[type=checkbox][name='Other']" ).on( "click", countCheckedOther);
+
+
 
 //end test three
 
