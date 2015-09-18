@@ -24,6 +24,7 @@
 <nav itemscope itemtype="http://schema.org/Code">
     <header><h3>References</h3></header>
     <h4>For September 17, 18 2015 edits</h4>
+    <h4>IMPORTANT!! The data- attributes are pulled in the first time the data property is accessed and then are no longer accessed or mutated (all data values are then stored internally in jQuery) Source: <a href="http://api.jquery.com/data">http://api.jquery.com/data</a></h4>
     <ul>
         <li><a href="http://api.jquery.com/prop/">JQuery .prop() method</a></li>
         <li><a href="https://api.jquery.com/data/">JQuery .data() method</a></li>
@@ -36,7 +37,8 @@
 
   <article itemscope itemtype="http://schema.org/CreativeWork">
     <header itemprop="mainEntityOfPage"><h1>Form One Baseline</h1></header>
-    <div data-institution="i-tampa">Test for data-type</div>
+    <div data-institution="i-tampa">Test one for data-type</div>
+    <div data-institution="tampa">Test two for data-type</div>
     <form>
     <h2>This Page Is Under Development</h2>
     <section>
@@ -667,7 +669,6 @@ jQuery("#college-step input").click (function () {
 
 //end section of code to display department only when college step is checked
 //below sourcecode http://www.bennadel.com/blog/1525-jquery-s-event-triggering-order-of-default-behavior-and-triggerhandler.htm
-
 $("#institution-step input").attr("checked","checked").triggerHandler('click');
 //Important this changes attribute to checked from undefined
 //end code http://www.bennadel.com/blog/1525-jquery-s-event-triggering-order-of-default-behavior-and-triggerhandler.htm
@@ -682,13 +683,92 @@ $( "#institution-step input" ).change(function() {
 //important this changes attribute to checked from undefined
 
 
+//tests for checked selector follow
+//https://api.jquery.com/checked-selector/
+//test one below works fine attribute is checked (whether the checkbox is checked or not--but it is not undefined) hold for code model
+/*
+var countChecked = function() {
+  var n = $( "input:checked" ).length;
+  $( "div" ).text( n + (n === 1 ? " is" : " are") + "  Institution checked!" );
+};
+countChecked();
+ 
+$( "#institution-step input[type=checkbox]" ).on( "click", countChecked );
+
+*/
+//end test one
+//test two works hold for model
+/*
+var countChecked = function() {
+  var n = $( "input:checked" ).length;
+  $( "div" ).text( n + (n === 1 ? " is" : " are") + "  Institution checked!" );
+};
+countChecked();
+ 
+$( "#institution-step input[type=checkbox][name$='USF']" ).on( "click", countChecked );
+*/
+//end test two
+//test three
+
+var countUSFChecked = function() {
+  var n = $( "input:checked" ).length;
+  $( "div" ).text( n + (n === 1 ? " is" : " are") + "  USF checked!" );
+};
+countUSFChecked();
+ 
+$( "#institution-step input[type=checkbox][name='USFSP']" ).on( "click", countUSFSPChecked );
+var countUSFSPChecked = function() {
+  var n = $( "input:checked" ).length;
+  $( "div" ).text( n + (n === 1 ? " is" : " are") + "  USFSP checked!" );
+};
+countUSFSPChecked();
+ 
+$( "#institution-step input[type=checkbox][name='USFSM']" ).on( "click", countUSFSMChecked );
+var countUSFSMChecked = function() {
+  var n = $( "input:checked" ).length;
+  $( "div" ).text( n + (n === 1 ? " is" : " are") + "  USFSM checked!" );
+};
+countUSFSMChecked();
+ 
+$( "#institution-step input[type=checkbox][name='Other']" ).on( "click", countOtherChecked );
+var countOtherChecked = function() {
+  var n = $( "input:checked" ).length;
+  $( "div" ).text( n + (n === 1 ? " is" : " are") + "  Other checked!" );
+};
+countOtherChecked();
+ 
+
+//end test three
+
+//https://api.jquery.com/checked-selector/
+//end tests for checked selector
+
+
+//Below tests failed hold for records 
+//tests for selecting by data-attribute follow
 //https://api.jquery.com/data/
+//test one below returns undefined
+//alert($('#department-step').attr("data-institution"));
+//above returns undefined
+//test two below returns undefined
 //alert( $( "body" ).data( "i-tampa" ) );
-//returns undefined
+//above returns undefined
+//test three below returns undefined
+//alert($('body').attr('tampa'));
+//above returns undefined
+//test four below  undefined...
+//alert($('body').data('institution'));
+//test four above  undefined...
+//test five below  undefined...
+//alert($('#department-step').data('institution'));
+//test five above  undefined...
+
+//reference articles for this test below
 //https://api.jquery.com/data/
+//http://stackoverflow.com/questions/22753629/jquery-get-html-5-data-attributes-with-hyphens-and-case-sensitivity/22753630#22753630
 </script>
   
   </body>
 </html>
-       
+        
     
