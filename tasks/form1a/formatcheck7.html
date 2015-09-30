@@ -43,20 +43,20 @@
                     
                     <ul style="list-style:none;">
                         <li><input type="checkbox" name="USF" value="USF" id="i-tampa"><label for="i-tampa"><span itemprop="name">USF</span></label></li>
-                        <li><input type="checkbox" name="USFSP" value="USFSP" id="i-stpete"><label for="i-stpete">USF St. Petersburg</label></li>
-                        <li><input type="checkbox" name="USFSM" value="USFSM" id="i-sarasota"><label for="i-sarasota">USF Sarasota-Manatee</label></li>
+                        <li><input type="checkbox" name="USFSP" value="USFSP" id="i-stpete"><label for="i-stpete"><span itemprop="name"></span>USF St. Petersburg</span></label></li>
+                        <li><input type="checkbox" name="USFSM" value="USFSM" id="i-sarasota"><label for="i-sarasota"><span itemprop="name"></span>USF Sarasota-Manatee</span></label></li>
                         <li><input type="checkbox" name="Other" value="Other" id="i-other"><label for="i-other">Other</label></li>
                     </ul>
         </fieldset>
     </section>
-    <section>
+    <section  itemprop="publisher" itemscope="" itemtype="http://schema.org/CollegeOrUniversity">
       <header><h3>Section Two: Colleges</h3></header>
             <!-- <form > -->
                  <fieldset id="college-step">
                 <legend>Which College Do You Wish to Attend?</legend>
 
                     <ul style="list-style:none;">
-                        <li><input type="checkbox" name="Arts and Sciences SM AM" value="Arts and Sciences SM AM" class="i-sarasota"  id="c-am"><label for="c-am">Arts & Sciences (USF Sarasota-Manatee) </label></li>
+                        <li><input type="checkbox" name="Arts and Sciences SM AM" value="Arts and Sciences SM AM" class="i-sarasota"  id="c-am"><label for="c-am">>Arts & Sciences(USF Sarasota-Manatee) </label></li>
                         <li><input type="checkbox" name="Arts and Sciences SP AP" value="Arts and Sciences SM AP" class="i-stpete"  id="c-ap"><label for="c-ap">Arts & Sciences (USF St. Petersburg) </label></li>
                         <li><input type="checkbox" name="Architecture and Community Design Other AR" value="Architecture and Community Design Other AR" class="i-other" id="c-ar"><label for="c-ar">Architecture and Community Design (Other) </label></li>
                         <li><input type="checkbox" name="Arts and Sciences Tampa AS" value="Arts and Sciences Tampa AS" class="i-tampa"  id="c-as"><label for="c-as">Arts & Sciences (USF Tampa) </label></li>
@@ -104,7 +104,7 @@
       <fieldset id="department-step">
                 <legend>Which Department/Program Are You Interested In?</legend>
                     <ul style="list-style:none;">
-                        <li><input type="checkbox" name="Accounting Tampa ACC BA" data-institution="(i-tampa)" value="Accounting Tampa ACC BA" class="c-ba i-tampa" id="p-ba-acc"><label for="p-ba-acc" data-code="ACC">Accounting (USF Tampa) Business</label></li>
+                        <li><input type="checkbox" name="Accounting Tampa ACC BA" data-institution="(i-tampa)" value="Accounting Tampa ACC BA" class="c-ba i-tampa" id="p-ba-acc"><label for="p-ba-acc" data-code="ACC"><span itemprop="department">Accounting</span>(USF Tampa) Business</label></li>
                         <li><input type="checkbox" name="Accounting SP ACC BP" data-institution="(i-stpete)" value="Accounting SP ACC BP" class="c-bp i-stpete" id="p-bp-acc"><label for="p-bp-acc" data-code="ACC">Accounting (USF St. Petersburg) Business</label></li>
                         <li><input type="checkbox" name="Accounting SM ACC BM" data-institution="(i-sarasota)" value="Accounting SM ACC BM" class="c-bm i-sarasota" id="p-bm-acc"><label for="p-bm-acc" data-code="ACC">Accounting (USF Sarasota-Manatee) Business</label></li>
                         <li><input type="checkbox" name="Accounting Other ACC TT" data-institution="(i-other)" value="Accounting Other ACC TT" class="c-tt i-other" id="p-tt-acc"><label for="p-tt-acc" data-code="ACC">Accounting (Other) Technology and Innovation</label></li>
